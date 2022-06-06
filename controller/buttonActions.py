@@ -1,5 +1,5 @@
 from flask import render_template
 
-def loginButtonClicked():
+def loginButtonClicked(login_form):
     pass #do stuff
 
