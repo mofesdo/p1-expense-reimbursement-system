@@ -24,3 +24,28 @@ def select_user(username, password):
         if connection is not None:
             connection.close()
 
+
+def authenticate(username, password):
+    connection = getConnection()
+    cursor = connection.cursor()
+    output = None
+
+    qry = f"SELECT * FROM users WHERE username='{username}' AND password='{password}';"
+
+    try:
+        cursor.execute(qry)
+
+        results = list(cursor.fetchall())
+
+        hashstring = str(hash(float(time.time())+random.random()))
+        if len(results) == 1 and results[0][3] == 0:
+            output = hashstring
+            qry2 = f"UPDATE users SET authtoken='{hashstring}' WHERE username='{username}';"
+            cursor.execute(qry2)
+            connection.commit()
+
+    except psycopg2.DatabaseError:
+        print("db error", flush=True)
+
+    connection.close()
+    return output
