@@ -1,27 +1,8 @@
 import psycopg2
-from model.connection import get_connection
-
-
-def select_user(username, password):
-    connection = get_connection()
-    cursor = connection.cursor()
-
-    qry = f"SELECT * FROM user_table WHERE username = '{username}' AND password = '{password}';"
-
-    try:
-        cursor.execute(qry)
-        while True:
-            record = cursor.fetchone()
-            if record is None:
-                break
-            user_login = Login(record[0], record[1], record[2])
-            return user_login
-
-    except(psycopg2.DatabaseError) as error:
-        print(error)
-    finally:
-        if connection is not None:
-            connection.close()
+from model.connection import getConnection, get_connection
+import time
+import random
+import hashlib
 
 
 def authenticate(username, password):
@@ -29,17 +10,18 @@ def authenticate(username, password):
     cursor = connection.cursor()
     output = None
 
-    qry = f"SELECT * FROM users WHERE username='{username}' AND password='{password}';"
+    hashedPW = md5hash(password)
+    qry = f"SELECT * FROM user_table WHERE username='{username}' AND password='{hashedPW}';"
+    print(hashedPW, flush=True)
 
     try:
         cursor.execute(qry)
-
         results = list(cursor.fetchall())
 
         hashstring = str(hash(float(time.time())+random.random()))
-        if len(results) == 1 and results[0][3] == 0:
+        if len(results) == 1:
             output = hashstring
-            qry2 = f"UPDATE users SET authtoken='{hashstring}' WHERE username='{username}';"
+            qry2 = f"UPDATE user_table SET authtoken='{hashstring}' WHERE username='{username}';"
             cursor.execute(qry2)
             connection.commit()
 
@@ -48,3 +30,8 @@ def authenticate(username, password):
 
     connection.close()
     return output
+
+
+def md5hash(s):
+    return hashlib.md5(s.encode('utf-8')).hexdigest()
+
