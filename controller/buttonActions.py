@@ -11,3 +11,5 @@ def loginButtonClicked(usr,pwd):
         response.set_cookie("authToken", auth)
         return response
 
+def get_index():
+    return render_template("index.html")
