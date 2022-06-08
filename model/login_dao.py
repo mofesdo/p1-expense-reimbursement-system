@@ -1,6 +1,5 @@
 import psycopg2
 from model.connection import get_connection
-from model.people import Login
 
 
 def select_user(username, password):
