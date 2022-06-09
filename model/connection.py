@@ -1,6 +1,7 @@
 # this file is used to define a function to get the database connection
 import psycopg2
 
+
 def get_connection():
     connection = psycopg2.connect(
             database="postgres",

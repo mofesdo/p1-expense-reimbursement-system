@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from controller.buttonActions import *
+from controller.decorators import CheckToken
 import os
 
 # template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
@@ -16,6 +17,7 @@ def user_login():
 
 
 @app.route("/", methods=["GET"])
+@CheckToken(request.cookies.get("authToken"))
 def home():
     return get_index()
 
