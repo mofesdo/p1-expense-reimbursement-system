@@ -1,7 +1,8 @@
 from flask import render_template, make_response
 from model.login_dao import *
 
-def loginButtonClicked(usr,pwd):
+
+def loginButtonClicked(usr, pwd):
     auth = authenticate(usr, pwd)
 
     if auth is None:
@@ -11,5 +12,3 @@ def loginButtonClicked(usr,pwd):
         response.set_cookie("authToken", auth)
         return response
 
-def get_index():
-    return render_template("index.html")

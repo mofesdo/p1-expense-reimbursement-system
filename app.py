@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from controller.buttonActions import *
+from controller.request_filter import *
 from controller.decorators import CheckToken
 import os
 
@@ -16,10 +17,15 @@ def user_login():
     return loginButtonClicked(usr, pwd)
 
 
-@app.route("/", methods=["GET"])
-@CheckToken(request.cookies.get("authToken"))
-def home():
+@app.route("/login", methods=["GET"])
+def login_page():
     return get_index()
+
+
+@app.route("/", methods=["GET"])
+@CheckToken(request)
+def home():
+    return get_dashboard()
 
 
 if __name__ == '__main__':

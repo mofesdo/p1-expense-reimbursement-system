@@ -1,3 +1,7 @@
+from model.connection import getConnection
+import psycopg2
+
+
 def checkToken(token):
     connection = getConnection()
     cursor = connection.cursor()
@@ -15,3 +19,4 @@ def checkToken(token):
     connection.close()
 
     return flag
+

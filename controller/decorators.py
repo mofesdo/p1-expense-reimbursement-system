@@ -1,17 +1,17 @@
-import model
+from model.authentication import checkToken
 from flask import render_template
 
 
 class CheckToken:
-    def __init__(self, token=""):
-        self.token = token
+    def __init__(self, requestObject):
+        self.r = requestObject
 
     def __call__(self, func):
         def wrapper():
-            if model.authentication.checkToken(self.token):
+            if checkToken(self.r.cookies.get("authToken")):
                 return func()
             else:
-                return render_template("Invalid Auth Token")
+                return render_template("error.html")
 
         return wrapper
 
