@@ -1,0 +1,18 @@
+E: 2022-06-09 19:31:30.481910 column "id" does not exist
+LINE 1: ...'i got some ship parts bro', '100.1', 0, '1') RETURNING id ;
+                                                                   ^
+
+R: 2022-06-09 19:31:30.518285 Database connection closed
+E: 2022-06-09 19:35:13.618984 column "id" does not exist
+LINE 1: ...'i got some ship parts bro', '100.1', 0, '1') RETURNING id ;
+                                                                   ^
+
+R: 2022-06-09 19:35:13.656011 Database connection closed
+E: 2022-06-09 19:37:06.106832 insert or update on table "reimbursements" violates foreign key constraint "reinbursements_username_fkey"
+DETAIL:  Key (username)=(lala) is not present in table "user_table".
+
+R: 2022-06-09 19:37:06.165027 Database connection closed
+R: 2022-06-09 19:42:05.852891 Created a new reimbursement request with id: 2
+R: 2022-06-09 19:42:05.853387 Database connection closed
+R: 2022-06-09 19:56:40.211926 Created a new reimbursement request with id: 3
+R: 2022-06-09 19:56:40.211926 Database connection closed

@@ -13,5 +13,6 @@ class CheckToken:
             else:
                 return render_template("error.html")
 
+        wrapper.__name__ = func.__name__
         return wrapper
 

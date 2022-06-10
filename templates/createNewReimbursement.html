@@ -9,12 +9,13 @@
 </head>
 <body>
     <div>
-          <h1>login</h1>
-          <form action="http://127.0.0.1:5000/login/input" method="post">
-              <input type="text" name="username" id="username" placeholder="Username">
+          <h1>Fill out information to create new reimbursement request</h1>
+          <form action="/requests/input" method="post">
+              <input type="text" name="description" id="description" placeholder="Description">
               <br>
+              <input type="text" name="price" id="price" placeholder="Price">
               <br>
-              <input type="text" name="descri" id="password " placeholder="Password">
+              <input type="text" name="urgent" id="urgent" placeholder="Urgent">
               <br>
               <input class="btn btn-dark btn-lg download-button" type="submit" value="Submit">
           </form>

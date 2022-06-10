@@ -8,3 +8,7 @@ def get_index():
 def get_dashboard():
     return render_template("dashboard.html")
 
+
+def get_request_form():
+    return render_template("createNewReimbursement.html")
+

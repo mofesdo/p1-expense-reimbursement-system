@@ -9,7 +9,7 @@ def create_reimbursements(username: str, description: str, price: float, status:
     cursor = connection.cursor()
     flag = False
 
-    qry = "INSERT INTO reimbursements VALUES (default, %s, %s, %s, %s, %s) RETURNING id ;"
+    qry = "INSERT INTO reimbursements VALUES (default, %s, %s, %s, %s, %s) RETURNING request_id ;"
 
     try:
         cursor.execute(qry, (username, description, price, status, urgent))
