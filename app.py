@@ -8,7 +8,7 @@ import os
 # template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 # template_dir = os.path.join(template_dir, 'view')
 # template_dir = os.path.join(template_dir, 'templates')
-app = Flask(__name__) #, template_folder=template_dir)
+app = Flask(__name__, static_url_path="/static") #, template_folder=template_dir)
 
 
 @app.route('/login/input', methods=["POST"])
