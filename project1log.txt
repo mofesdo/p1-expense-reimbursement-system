@@ -16,3 +16,17 @@ R: 2022-06-09 19:42:05.852891 Created a new reimbursement request with id: 2
 R: 2022-06-09 19:42:05.853387 Database connection closed
 R: 2022-06-09 19:56:40.211926 Created a new reimbursement request with id: 3
 R: 2022-06-09 19:56:40.211926 Database connection closed
+E: 2022-06-11 01:26:28.003421 invalid input syntax for type numeric: ""
+LINE 1: ...jjgdhlkgdksahhgdsahgdjhklgdlskhahlkgdashljdgsah', '', 0, NUL...
+                                                             ^
+
+R: 2022-06-11 01:26:28.077229 Database connection closed
+E: 2022-06-11 01:29:10.790266 invalid input syntax for type numeric: ""
+LINE 1: ...sldkjdhsalhlgdslhkdgsajlhkdgaslhdgkjjgdhlkgdkss', '', 0, NUL...
+                                                             ^
+
+R: 2022-06-11 01:29:10.866237 Database connection closed
+R: 2022-06-11 01:32:51.584927 Created a new reimbursement request with id: 4
+R: 2022-06-11 01:32:51.586977 Database connection closed
+R: 2022-06-11 01:33:30.439185 Created a new reimbursement request with id: 5
+R: 2022-06-11 01:33:30.439185 Database connection closed

@@ -53,17 +53,29 @@
             </div>
         </nav>
     </div>
+    <div class="container-lg">
+
     <div>
-          <h1>Fill out information to create new reimbursement request</h1>
+          <h1>Fill out following information to <br>create new reimbursement request</h1>
           <form action="/requests/input" method="post">
-              <input type="text" name="description" id="description" placeholder="Description">
+            <label for="description">Enter Description (Max 100 Characters)</label>
+            <br>
+              <input type="text" name="description" id="description" placeholder="Enter Description..." size="100" maxlength="100">
               <br>
-              <input type="text" name="price" id="price" placeholder="Price">
               <br>
-              <input type="text" name="urgent" id="urgent" placeholder="Urgent">
+              <label for="price">Enter Price (Between 1 and 1000): </label>
+              <input type="number" name="price" id="price" min="1" max="1000" step="0.01">
+              <br>
+              <br>
+              <label for="urgent">Is This Request Urgent?</label>
+              <input type="radio" id="urgent" name="urgent" value="1">
+              <label for="urgent">Yes</label>
+              <input type="radio" id="urgent" name="urgent" value="0">
+              <label for="urgent">No</label>
               <br>
               <input class="btn btn-dark btn-lg download-button" type="submit" value="Submit">
           </form>
+    </div>
     </div>
 </body>
 </html>
