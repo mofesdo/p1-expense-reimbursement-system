@@ -48,5 +48,18 @@ def create_requests():
 # dan was here
 
 
+@app.route("/cancelrequest", methods=["GET"])
+def cancelrequest():
+    usr = getUsername(request.cookies.get("authToken"))
+    return get_cancellation_page(usr, "asc")
+
+
+@app.route("/cancelrequest/input", methods=["POST"])
+def processCancellation():
+    request_id = request.form.get("request_id")
+    return cancelRequestClicked(request_id)
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)

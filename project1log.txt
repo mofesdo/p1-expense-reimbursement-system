@@ -50,3 +50,38 @@ R: 2022-06-11 21:34:48.775791 all records for user_1 retrieved
 R: 2022-06-11 21:35:36.550413 all records for user_1 retrieved
 R: 2022-06-11 21:36:25.668920 all records for user_1 retrieved
 R: 2022-06-11 21:36:53.240549 all records for user_1 retrieved
+R: 2022-06-11 21:59:48.754536 all records for user_1 retrieved
+R: 2022-06-11 21:59:53.263975 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:01:03.136751 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:26:03.780155 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:27:05.886304 cancelled reimbursement request of id: 10
+R: 2022-06-11 22:27:11.668182 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:29:24.784742 cancelled reimbursement request of id: 11
+R: 2022-06-11 22:29:27.722328 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:32:58.862916 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:33:01.144065 cancelled reimbursement request of id: 10
+R: 2022-06-11 22:33:04.211347 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:33:42.605091 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:33:44.370178 cancelled reimbursement request of id: 10
+R: 2022-06-11 22:33:47.605220 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:38:07.102188 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:38:10.963972 cancelled reimbursement request of id: 10
+R: 2022-06-11 22:38:13.400558 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:40:14.904879 all records for user_1 retrieved that are ongoing
+E: 2022-06-11 22:40:18.501407 column "cancel" does not exist
+LINE 1: ...DATE reimbursements SET status= '3' WHERE request_id=Cancel;
+                                                                ^
+
+R: 2022-06-11 22:40:22.185939 all records for user_1 retrieved that are ongoing
+E: 2022-06-11 22:40:24.175202 column "cancel" does not exist
+LINE 1: ...DATE reimbursements SET status= '3' WHERE request_id=Cancel;
+                                                                ^
+
+R: 2022-06-11 22:40:26.392122 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:41:17.083701 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:44:39.184865 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:44:42.687885 cancelled reimbursement request of id: 2
+R: 2022-06-11 22:44:44.954613 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:44:46.953796 cancelled reimbursement request of id: 4
+R: 2022-06-11 22:44:49.010836 all records for user_1 retrieved that are ongoing
+R: 2022-06-11 22:45:39.353674 all records for user_1 retrieved

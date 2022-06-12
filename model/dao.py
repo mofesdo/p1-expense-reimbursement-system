@@ -50,3 +50,47 @@ def getReimbursementRequests(username, orderStyle):
         log_error(str(e))
 
     return results
+
+
+def getOngoingRequests(username, orderStyle):
+    connection = getConnection()
+    cursor = connection.cursor()
+
+    results = []
+
+    qry = f"SELECT * FROM reimbursements WHERE username='{username}' AND status= '{0}' ORDER BY date_initiated ASC;"
+    qry2 = f"SELECT * FROM reimbursements WHERE username='{username}' AND status= '{0}' ORDER BY date_initiated DESC;"
+
+    if orderStyle == "asc":
+        finalQry = qry
+    else:
+        finalQry = qry2
+
+    try:
+        cursor.execute(finalQry)
+        results = list(cursor.fetchall())
+        log_regular(f"all records for {username} retrieved that are ongoing")
+    except psycopg2.DatabaseError as e:
+        log_error(str(e))
+
+    return results
+
+
+def cancel_reimbursement(request_id):
+    connection = getConnection()
+    cursor = connection.cursor()
+
+    flag = False
+
+    qry = f"UPDATE reimbursements SET status= '{3}' WHERE request_id={request_id};"
+    try:
+        cursor.execute(qry)
+        connection.commit()
+        log_regular(f"cancelled reimbursement request of id: {request_id}")
+        flag = True
+    except psycopg2.DatabaseError as e:
+        log_error(str(e))
+        connection.rollback()
+
+    return flag
+

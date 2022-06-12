@@ -17,3 +17,8 @@ def loginButtonClicked(usr, pwd):
 def createRequestsClicked(usr, desc, price, urg, date):
     create_reimbursements(usr, desc, price, 0, urg, date)
     return render_template("dashboard.html")
+
+
+def cancelRequestClicked(request_id):
+    cancel_reimbursement(request_id)
+    return render_template("dashboard.html")
