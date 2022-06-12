@@ -69,10 +69,15 @@
               <br>
               <br>
               <h2>Is This Request Urgent?</h2>
-              <input type="radio" id="urgent1" name="urgent1" value="1">
-              <label for="urgent1">Yes</label>
-              <input type="radio" id="urgent0" name="urgent0" value="0">
-              <label for="urgent0">No</label>
+              <input type="radio" id="isUrgent" name="urgent" value="1">
+              <label for="isUrgent">Yes</label>
+              <input type="radio" id="isNotUrgent" name="urgent" value="0" checked="checked">
+              <label for="isNotUrgent">No</label>
+              <br>
+              <label for="date">Today's date:</label>
+              <input type="date" id="date" name="date"
+                value={{currentDatetime}}
+                min="2022-01-01" max="2022-12-31">
               <br>
               <input class="btn btn-dark btn-lg download-button" type="submit" value="Submit">
           </form>

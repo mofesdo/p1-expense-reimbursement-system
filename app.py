@@ -26,7 +26,8 @@ def login_page():
 @app.route("/", methods=["GET"])
 @CheckToken(request)
 def home():
-    return get_dashboard()
+    usr = getUsername(request.cookies.get("authToken"))
+    return get_dashboard(usr, "asc")
 
 
 @app.route("/createrequest", methods=["GET"])
@@ -41,7 +42,8 @@ def create_requests():
     desc = request.form.get("description")
     price = request.form.get("price")
     urg = request.form.get("urgent")
-    return createRequestsClicked(usr, desc, price, urg)
+    date = request.form.get("date")
+    return createRequestsClicked(usr, desc, price, urg, date)
 
 # dan was here
 

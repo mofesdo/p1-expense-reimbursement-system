@@ -14,6 +14,6 @@ def loginButtonClicked(usr, pwd):
         return response
 
 
-def createRequestsClicked(usr, desc, price, urg):
-    create_reimbursements(usr, desc, price, 0, urg)
+def createRequestsClicked(usr, desc, price, urg, date):
+    create_reimbursements(usr, desc, price, 0, urg, date)
     return render_template("dashboard.html")

@@ -30,3 +30,23 @@ R: 2022-06-11 01:32:51.584927 Created a new reimbursement request with id: 4
 R: 2022-06-11 01:32:51.586977 Database connection closed
 R: 2022-06-11 01:33:30.439185 Created a new reimbursement request with id: 5
 R: 2022-06-11 01:33:30.439185 Database connection closed
+R: 2022-06-11 20:22:39.098873 Created a new reimbursement request with id: 6
+R: 2022-06-11 20:22:39.100003 Database connection closed
+R: 2022-06-11 20:24:40.593290 Created a new reimbursement request with id: 7
+R: 2022-06-11 20:24:40.594281 Database connection closed
+R: 2022-06-11 20:30:35.935155 Created a new reimbursement request with id: 8
+R: 2022-06-11 20:30:35.936162 Database connection closed
+R: 2022-06-11 21:09:01.523704 Created a new reimbursement request with id: 9
+R: 2022-06-11 21:09:01.524199 Database connection closed
+R: 2022-06-11 21:11:57.025256 Created a new reimbursement request with id: 10
+R: 2022-06-11 21:11:57.025256 Database connection closed
+R: 2022-06-11 21:33:27.260290 Created a new reimbursement request with id: 11
+R: 2022-06-11 21:33:27.260960 Database connection closed
+E: 2022-06-11 21:33:29.795167 column "user_1" does not exist
+LINE 1: SELECT * FROM reimbursements WHERE username=user_1 ORDER BY ...
+                                                    ^
+
+R: 2022-06-11 21:34:48.775791 all records for user_1 retrieved
+R: 2022-06-11 21:35:36.550413 all records for user_1 retrieved
+R: 2022-06-11 21:36:25.668920 all records for user_1 retrieved
+R: 2022-06-11 21:36:53.240549 all records for user_1 retrieved

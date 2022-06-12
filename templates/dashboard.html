@@ -62,6 +62,18 @@
             <a href="/createrequest">
                 Create A New Reimbursement Requests!
             </a>
+
+            {% for request in returnedRequests %}
+
+                <div class="container-fluid">
+                    <h1>
+                        {{request}}
+                    </h1>
+                </div>
+
+            {% endfor %}
+
+
         </div>
     </section>
 </body>

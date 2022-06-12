@@ -1,14 +1,17 @@
 from flask import render_template
-
+import datetime
+from model import dao
 
 def get_index():
     return render_template("index.html")
 
 
-def get_dashboard():
-    return render_template("dashboard.html")
+def get_dashboard(usr, asc):
+    stuff = dao.getReimbursementRequests(usr, asc)
+    return render_template("dashboard.html", returnedRequests=stuff)
 
 
 def get_request_form():
-    return render_template("createNewReimbursement.html")
+    return render_template("createNewReimbursement.html", currentDatetime=
+                            str(datetime.datetime.now()).split("T")[0] )
 
