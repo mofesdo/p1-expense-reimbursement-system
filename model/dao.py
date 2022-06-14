@@ -76,6 +76,8 @@ def getOngoingRequests(username, orderStyle):
     return results
 
 
+# COULD CHANGE CANCEL_REIMBURSEMENT TO GENERAL CHANGE STATUS FUNCTION. ADD PARAMETER OF "STATUS"
+
 def cancel_reimbursement(request_id):
     connection = getConnection()
     cursor = connection.cursor()

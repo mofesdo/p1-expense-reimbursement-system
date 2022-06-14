@@ -67,5 +67,16 @@ def manageRequests():
     return get_manager_page("asc")
 
 
+@app.route("/manager/approve", methods=["POST"])
+def managerApprove():
+    rid = request.form.get("request_id")
+    return get_manager_page("asc")
+
+
+@app.route("/manager/decline", methods=["POST"])
+def managerDecline():
+    return get_manager_page("asc")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
