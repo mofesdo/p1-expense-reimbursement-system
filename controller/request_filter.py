@@ -7,9 +7,9 @@ def get_index():
     return render_template("index.html")
 
 
-def get_dashboard(usr, asc):
+def get_dashboard(usr, asc, ismngr):
     stuff = dao.getReimbursementRequests(usr, asc)
-    return render_template("dashboard.html", returnedRequests=stuff)
+    return render_template("dashboard.html", returnedRequests=stuff, isManager=ismngr)
 
 
 def get_request_form():
@@ -24,5 +24,11 @@ def get_cancellation_page(usr, asc):
 
 def get_manager_page(asc):
     allOngoingRequests = dao.getAllReimbursementRequests(asc)
-    return render_template("manager.html", returnedRequests=allOngoingRequests)
+    return render_template("manager.html", returnedRequests=allOngoingRequests, hiddenRowCount=len(allOngoingRequests))
+
+
+def render_log():
+    f = open("project1log.txt", "r")
+    out = "<br>".join(list(f.readlines()))
+    return out
 

@@ -61,7 +61,10 @@
             </thead>
             {% for request in returnedRequests %}
 
-            <tr>
+            <tr
+                    {% if request[4]==1 %} class="bg-success" {% endif %}
+                    {% if request[4]==2 %} class="bg-danger" {% endif %}
+                    {% if request[4]==3 %} class="bg-warning" {% endif %}>
                 <td>
                     {{request[0]}}
                 </td>
@@ -84,13 +87,17 @@
                     {{request[6]}}
                 </td>
                 <td>
-                    <button onclick="approve()">Approve</button>
+                    <button id="button{{request[0]}}" onclick="approved({{request[0]}})" value="{{request[0]}}">Approve</button>
+                </td>
+                <td>
+                    <button id="dbutton{{request[0]}}" onclick="declined({{request[0]}})" value="{{request[0]}}">Decline</button>
                 </td>
             </tr>
 
-            {% endfor %}
 
+            {% endfor %}
         </table>
+        <input type="hidden" id="hidden_rowcount" value="{{hiddenRowCount}}">
 <script src="/static/scripts/script1.js"></script>
 </body>
 </html>

@@ -5,5 +5,3 @@ class Employee:
         self.title = title
         self.is_manager = is_manager
 
-
-

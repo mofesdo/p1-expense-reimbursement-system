@@ -2,13 +2,18 @@ from flask import Flask, render_template, request
 from controller.buttonActions import *
 from controller.request_filter import *
 from controller.decorators import CheckToken, IsManager
-from model.authentication import getUsername
+from model.authentication import getUsername, isManager
 import os
 
 # template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 # template_dir = os.path.join(template_dir, 'view')
 # template_dir = os.path.join(template_dir, 'templates')
 app = Flask(__name__, static_url_path="/static") #, template_folder=template_dir)
+
+
+@app.route("/log", methods=["GET"])
+def give_log():
+    return render_log()
 
 
 @app.route('/login/input', methods=["POST"])
@@ -26,8 +31,10 @@ def login_page():
 @app.route("/", methods=["GET"])
 @CheckToken(request)
 def home():
-    usr = getUsername(request.cookies.get("authToken"))
-    return get_dashboard(usr, "asc")
+    token = request.cookies.get("authToken")
+    ismngr = isManager(token)
+    usr = getUsername(token)
+    return get_dashboard(usr, "asc", ismngr)
 
 
 @app.route("/createrequest", methods=["GET"])
@@ -70,12 +77,13 @@ def manageRequests():
 @app.route("/manager/approve", methods=["POST"])
 def managerApprove():
     rid = request.form.get("request_id")
-    return get_manager_page("asc")
+    return approveRequestClicked(rid)
 
 
 @app.route("/manager/decline", methods=["POST"])
 def managerDecline():
-    return get_manager_page("asc")
+    rid = request.form.get("request_id")
+    return declineRequestClicked(rid)
 
 
 if __name__ == '__main__':

@@ -119,3 +119,41 @@ def getAllReimbursementRequests(orderStyle):
         log_error(str(e))
 
     return results
+
+
+def approve_reimbursement(request_id):
+    connection = getConnection()
+    cursor = connection.cursor()
+
+    flag = False
+
+    qry = f"UPDATE reimbursements SET status= '{1}' WHERE request_id={request_id} AND status = 0;"
+    try:
+        cursor.execute(qry)
+        connection.commit()
+        log_regular(f"Approved reimbursement request of id: {request_id}")
+        flag = True
+    except psycopg2.DatabaseError as e:
+        log_error(str(e))
+        connection.rollback()
+
+    return flag
+
+
+def decline_reimbursement(request_id):
+    connection = getConnection()
+    cursor = connection.cursor()
+
+    flag = False
+
+    qry = f"UPDATE reimbursements SET status= '{2}' WHERE request_id={request_id} AND status = 0;"
+    try:
+        cursor.execute(qry)
+        connection.commit()
+        log_regular(f"Approved reimbursement request of id: {request_id}")
+        flag = True
+    except psycopg2.DatabaseError as e:
+        log_error(str(e))
+        connection.rollback()
+
+    return flag

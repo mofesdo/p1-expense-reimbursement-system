@@ -3,7 +3,10 @@ body {
     text-align: center;
     background-color: #f0932b;
   }
-  
+
+  .table tbody tr > td.warning {
+  background-color: #fff !important;
+}
   .container-fluid {
     padding: 7% 15%;
   }
