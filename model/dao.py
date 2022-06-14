@@ -94,3 +94,26 @@ def cancel_reimbursement(request_id):
 
     return flag
 
+
+def getAllReimbursementRequests(orderStyle):
+    connection = getConnection()
+    cursor = connection.cursor()
+
+    results = []
+
+    qry = f"SELECT * FROM reimbursements ORDER BY date_initiated ASC;"
+    qry2 = f"SELECT * FROM reimbursements ORDER BY date_initiated DESC;"
+
+    if orderStyle == "asc":
+        finalQry = qry
+    else:
+        finalQry = qry2
+
+    try:
+        cursor.execute(finalQry)
+        results = list(cursor.fetchall())
+        log_regular(f"all records for all users retrieved")
+    except psycopg2.DatabaseError as e:
+        log_error(str(e))
+
+    return results

@@ -21,3 +21,8 @@ def get_cancellation_page(usr, asc):
     ongoingRequests = dao.getOngoingRequests(usr, asc)
     return render_template("cancelRequests.html", returnedRequests=ongoingRequests)
 
+
+def get_manager_page(asc):
+    allOngoingRequests = dao.getAllReimbursementRequests(asc)
+    return render_template("manager.html", returnedRequests=allOngoingRequests)
+

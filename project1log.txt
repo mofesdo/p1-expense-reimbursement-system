@@ -85,3 +85,12 @@ R: 2022-06-11 22:44:44.954613 all records for user_1 retrieved that are ongoing
 R: 2022-06-11 22:44:46.953796 cancelled reimbursement request of id: 4
 R: 2022-06-11 22:44:49.010836 all records for user_1 retrieved that are ongoing
 R: 2022-06-11 22:45:39.353674 all records for user_1 retrieved
+R: 2022-06-13 22:56:12.266753 all records for user_1 retrieved
+R: 2022-06-13 22:57:03.284953 all records for user_1 retrieved that are ongoing
+R: 2022-06-13 23:22:53.970470 all records for user_1 retrieved
+R: 2022-06-13 23:23:03.284663 user with token 2054632091712747708 has manager status False
+R: 2022-06-13 23:29:02.806034 all records for manager_1 retrieved
+R: 2022-06-13 23:29:18.904661 user with token 350437447171571833 has manager status True
+R: 2022-06-13 23:30:08.110942 user with token 350437447171571833 has manager status True
+R: 2022-06-13 23:30:08.471858 all records for all users retrieved
+R: 2022-06-13 23:30:16.404412 all records for manager_1 retrieved

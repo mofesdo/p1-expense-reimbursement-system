@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from controller.buttonActions import *
 from controller.request_filter import *
-from controller.decorators import CheckToken
+from controller.decorators import CheckToken, IsManager
 from model.authentication import getUsername
 import os
 
@@ -59,6 +59,12 @@ def processCancellation():
     request_id = request.form.get("request_id")
     return cancelRequestClicked(request_id)
 
+
+@app.route("/manager", methods=["GET"])
+@CheckToken(request)
+@IsManager(request)
+def manageRequests():
+    return get_manager_page("asc")
 
 
 if __name__ == '__main__':
