@@ -65,74 +65,100 @@
 
 <section class="colored-section" id="title">
     <div class="container-fluid">
-        <h1> You successfully logged in!</h1>
-        <a href="/createrequest">
-            Create A New Reimbursement Requests!
-        </a>
+
+        <h1> Welcome back, {{user}}!</h1>
+        <div>
+            <h3>Filter by: </h3>
+            <input type="checkbox" id="status0" name="status0" value="0" checked>
+            <label for="status0">Ongoing</label>
+            <input type="checkbox" id="status1" name="status1" value="1" checked>
+            <label for="status1">Approved</label>
+            <input type="checkbox" id="status2" name="status2" value="2" checked>
+            <label for="status2">Denied</label>
+            <input type="checkbox" id="status3" name="status3" value="3" checked>
+            <label for="status3">Canceled</label>
+
+            <input type="checkbox" id="urgent0" name="urgent0" value="0" checked>
+            <label for="urgent0">Show NOT Urgent</label>
+            <input type="checkbox" id="urgent1" name="urgent1" value="1" checked>
+            <label for="urgent1">Show URGENT</label>
 
 
-        <table class="table">
-            <thead class="thead-dark">
-            <tr>
-                <td>
-                    request_id
-                </td>
-                <td>
-                    username
-                </td>
-                <td>
-                    description
-                </td>
-                <td>
-                    price
-                </td>
-                <td>
-                    status
-                </td>
-                <td>
-                    urgency
-                </td>
-                <td>
-                    date
-                </td>
-            </tr>
-            </thead>
-            {% for request in returnedRequests %}
+        </div>
+        <div class="tableFixHead">
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th>
+                        request_id
+                    </th>
+                    <th>
+                        username
+                    </th>
+                    <th>
+                        description
+                    </th>
+                    <th>
+                        price
+                    </th>
+                    <th>
+                        status
+                    </th>
+                    <th>
+                        urgency
+                    </th>
+                    <th>
+                        date
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for request in returnedRequests %}
 
-            <tr {% if request[4]==0 %} class="ongoing" {% endif %}
-                {% if request[4]==1 %} class="bg-success " {% endif %}
-                {% if request[4]==2 %} class="bg-danger" {% endif %}
-                {% if request[4]==3 %} class="bg-warning" {% endif %}>
-                <td>
-                    {{request[0]}}
-                </td>
-                <td>
-                    {{request[1]}}
-                </td>
-                <td>
-                    {{request[2]}}
-                </td>
-                <td>
-                    {{request[3]}}
-                </td>
-                <td>
-                    {{request[4]}}
-                </td>
-                <td>
-                    {{request[5]}}
-                </td>
-                <td>
-                    {{request[6]}}
-                </td>
-            </tr>
+                <tr {% if request[4]==0 and request[5]==0 %} class="ongoing normal" {% endif %}
+                    {% if request[4]==1 and request[5]==0 %} class="bg-success approved normal" {% endif %}
+                    {% if request[4]==2 and request[5]==0 %} class="bg-danger denied normal" {% endif %}
+                    {% if request[4]==3 and request[5]==0 %} class="bg-warning canceled normal" {% endif %}
 
-            {% endfor %}
+                    {% if request[4]==0 and request[5]==1 %} class="ongoing urgent" {% endif %}
+                    {% if request[4]==1 and request[5]==1 %} class="bg-success approved urgent" {% endif %}
+                    {% if request[4]==2 and request[5]==1 %} class="bg-danger denied urgent" {% endif %}
+                    {% if request[4]==3 and request[5]==1 %} class="bg-warning canceled urgent" {% endif %}>
+                    <td>
+                        {{request[0]}}
+                    </td>
+                    <td>
+                        {{request[1]}}
+                    </td>
+                    <td>
+                        {{request[2]}}
+                    </td>
+                    <td>
+                        {{request[3]}}
+                    </td>
+                    <td>
+                        {{request[4]}}
+                    </td>
+                    <td>
+                        {{request[5]}}
+                    </td>
+                    <td>
+                        {{request[6]}}
+                    </td>
+                </tr>
 
-        </table>
+                {% endfor %}
 
-        <button class="log"><a href="/log">View Log</a></button>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <button class="log btn btn-light"><a href="/log">View Log</a></button>
     </div>
 </section>
+
+
+<script src="/static/scripts/requestFilterLogic.js"></script>
 </body>
 
 </html>

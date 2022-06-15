@@ -95,8 +95,16 @@
         </thead>
         {% for request in returnedRequests %}
 
-        <tr {% if request[4]==1 %} class="bg-success" {% endif %} {% if request[4]==2 %} class="bg-danger" {% endif %}
-            {% if request[4]==3 %} class="bg-warning" {% endif %}>
+        <tr
+                {% if request[4]==0 and request[5]==0 %} class="ongoing normal" {% endif %}
+                {% if request[4]==1 and request[5]==0 %} class="bg-success approved normal" {% endif %}
+                {% if request[4]==2 and request[5]==0 %} class="bg-danger denied normal" {% endif %}
+                {% if request[4]==3 and request[5]==0 %} class="bg-warning canceled normal" {% endif %}
+
+                {% if request[4]==0 and request[5]==1 %} class="ongoing urgent" {% endif %}
+                {% if request[4]==1 and request[5]==1 %} class="bg-success approved urgent" {% endif %}
+                {% if request[4]==2 and request[5]==1 %} class="bg-danger denied urgent" {% endif %}
+                {% if request[4]==3 and request[5]==1 %} class="bg-warning canceled urgent" {% endif %}>
             <td>
                 {{request[0]}}
             </td>
@@ -131,8 +139,32 @@
 
         {% endfor %}
     </table>
+
+
+    <div class="container-fluid white-section">
+    <input type="checkbox" id="status0" name="status0" value="0" checked>
+    <label for="status0">Ongoing</label><br>
+    <input type="checkbox" id="status1" name="status1" value="1" checked>
+    <label for="status1">Approved</label><br>
+    <input type="checkbox" id="status2" name="status2" value="2" checked>
+    <label for="status2">Denied</label><br>
+    <input type="checkbox" id="status3" name="status3" value="3" checked>
+    <label for="status3">Canceled</label><br>
+
+    <br>
+    <br>
+
+    <input type="checkbox" id="urgent0" name="urgent0" value="0" checked>
+    <label for="urgent0">Show NOT Urgent</label><br>
+    <input type="checkbox" id="urgent1" name="urgent1" value="1" checked>
+    <label for="urgent1">Show URGENT</label><br>
+
+</div>
+
+
     <input type="hidden" id="hidden_rowcount" value="{{hiddenRowCount}}">
     <script src="/static/scripts/script1.js"></script>
+    <script src="/static/scripts/requestFilterLogic.js"></script>
 </body>
 
 </html>

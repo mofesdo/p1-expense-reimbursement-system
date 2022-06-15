@@ -11,7 +11,7 @@ function ongoing() {
     
     for (const element of stuff) {
         if (element.style.display == 'none') {
-            element.style.display = 'block';
+            element.style.display = 'table-row';
         } else {
             element.style.display = 'none';
         }
@@ -23,7 +23,7 @@ function approved() {
 
     for (const element of stuff) {
         if (element.style.display == 'none') {
-            element.style.display = 'block';
+            element.style.display = 'table-row';
         } else {
             element.style.display = 'none';
         }
@@ -35,7 +35,7 @@ function denied() {
 
     for (const element of stuff) {
         if (element.style.display == 'none') {
-            element.style.display = 'block';
+            element.style.display = 'table-row';
         } else {
             element.style.display = 'none';
         }
@@ -47,7 +47,7 @@ function canceled() {
 
     for (const element of stuff) {
         if (element.style.display == 'none') {
-            element.style.display = 'block';
+            element.style.display = 'table-row';
         } else {
             element.style.display = 'none';
         }
@@ -59,7 +59,7 @@ function normal() {
 
     for (const element of stuff) {
         if (element.style.display == 'none') {
-            element.style.display = 'block';
+            element.style.display = 'table-row';
         } else {
             element.style.display = 'none';
         }
@@ -71,7 +71,7 @@ function urgent() {
 
     for (const element of stuff) {
         if (element.style.display == 'none') {
-            element.style.display = 'block';
+            element.style.display = 'table-row';
         } else {
             element.style.display = 'none';
         }

@@ -9,7 +9,7 @@ def get_index():
 
 def get_dashboard(usr, asc, ismngr):
     stuff = dao.getReimbursementRequests(usr, asc)
-    return render_template("dashboard.html", returnedRequests=stuff, isManager=ismngr)
+    return render_template("dashboard.html", user=usr, returnedRequests=stuff, isManager=ismngr)
 
 
 def get_request_form():
