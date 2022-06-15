@@ -1,9 +1,9 @@
-var radioOngoing = document.getElementById("status0");
-var radioApproved = document.getElementById("status1");
-var radioDenied = document.getElementById("status2");
-var radioCanceled = document.getElementById("status3");
-var radioNormal = document.getElementById("urgent0");
-var radioUrgent = document.getElementById("urgent1");
+var checkOngoing = document.getElementById("status0");
+var checkApproved = document.getElementById("status1");
+var checkDenied = document.getElementById("status2");
+var checkCanceled = document.getElementById("status3");
+var checkNormal = document.getElementById("urgent0");
+var checkUrgent = document.getElementById("urgent1");
 
 
 function ongoing() {
@@ -79,9 +79,9 @@ function urgent() {
 }
 
 
-radioOngoing.addEventListener("click",ongoing);
-radioApproved.addEventListener("click",approved);
-radioDenied.addEventListener("click",denied);
-radioCanceled.addEventListener("click",canceled);
-radioNormal.addEventListener("click",normal);
-radioUrgent.addEventListener("click",urgent);
+checkOngoing.addEventListener("click",ongoing);
+checkApproved.addEventListener("click",approved);
+checkDenied.addEventListener("click",denied);
+checkCanceled.addEventListener("click",canceled);
+checkNormal.addEventListener("click",normal);
+checkUrgent.addEventListener("click",urgent);
