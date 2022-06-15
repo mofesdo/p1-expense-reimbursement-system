@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Create New Reimbursement Request</title>
     <link rel="stylesheet" type="image/x-icon" href="file://localhost/Users/mofesdo/Downloads/favicon.ico">
@@ -27,12 +28,14 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
 </head>
+
 <body>
+    <!-- Nav Bar -->
     <div class="container-lg">
-        <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="/static/images/favicon1.png" width="30" height="30" alt="">
+                <img src="https://www.shareicon.net/data/256x256/2016/06/30/625014_chest_256x256.png" width="48"
+                    height="48" alt="">
             </a>
             <a class="navbar-brand" href="">Blackbeard's Crew </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -48,40 +51,45 @@
                         <a class="nav-link" href="/createrequest">Create A New Request</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Cancel Ongoing Requests </a>
+                        <a class="nav-link" href="/cancelrequest">Cancel Ongoing Requests </a>
                     </li>
+                    {% if isManager %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/manager">Accept / Decline Requests </a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
     </div>
     <div class="container-lg">
 
-    <div>
-          <h1>Fill out following information to <br>create new reimbursement request</h1>
-          <form action="/requests/input" method="post">
-            <label for="description">Enter Description (Max 100 Characters)</label>
-            <br>
-              <input type="text" name="description" id="description" placeholder="Enter Description..." size="100" maxlength="100">
-              <br>
-              <br>
-              <label for="price">Enter Price (Between 1 and 1000): </label>
-              <input type="number" name="price" id="price" min="1" max="1000" step="0.01">
-              <br>
-              <br>
-              <h2>Is This Request Urgent?</h2>
-              <input type="radio" id="isUrgent" name="urgent" value="1">
-              <label for="isUrgent">Yes</label>
-              <input type="radio" id="isNotUrgent" name="urgent" value="0" checked="checked">
-              <label for="isNotUrgent">No</label>
-              <br>
-              <label for="date">Today's date:</label>
-              <input type="date" id="date" name="date"
-                value={{currentDatetime}}
-                min="2022-01-01" max="2022-12-31">
-              <br>
-              <input class="btn btn-dark btn-lg download-button" type="submit" value="Submit">
-          </form>
-    </div>
+        <div>
+            <h1>Fill out following information to <br>create new reimbursement request</h1>
+            <form action="/requests/input" method="post">
+                <label for="description">Enter Description (Max 100 Characters)</label>
+                <br>
+                <input type="text" name="description" id="description" placeholder="Enter Description..." size="100"
+                    maxlength="100">
+                <br>
+                <br>
+                <label for="price">Enter Price (Between 1 and 1000): </label>
+                <input type="number" name="price" id="price" min="1" max="1000" step="0.01">
+                <br>
+                <br>
+                <h2>Is This Request Urgent?</h2>
+                <input type="radio" id="isUrgent" name="urgent" value="1">
+                <label for="isUrgent">Yes</label>
+                <input type="radio" id="isNotUrgent" name="urgent" value="0" checked="checked">
+                <label for="isNotUrgent">No</label>
+                <br>
+                <label for="date">Today's date:</label>
+                <input type="date" id="date" name="date" value={{currentDatetime}} min="2022-01-01" max="2022-12-31">
+                <br>
+                <input class="btn btn-dark btn-lg download-button" type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
