@@ -62,8 +62,6 @@
     </nav>
 </div>
 
-
-<br>
 <section class="colored-section">
     <div class="container-fluid">
         <h1> Which request would you like to approve/deny?</h1>
@@ -82,6 +80,11 @@
             <label for="urgent0">Show NOT Urgent</label>
             <input type="checkbox" id="urgent1" name="urgent1" value="1" checked>
             <label for="urgent1">Show URGENT</label>
+
+            <a class="btn-sort">
+                <button class="btn btn-warning" onclick="sort_asc()">Sort: ASC</button>
+                <button class="btn btn-primary" onclick="sort_desc()">Sort: DESC</button>
+            </a>
 
         </div>
 
@@ -152,16 +155,21 @@
                         {{request[6]}}
                     </td>
                     <td>
-                        <button class="btn btn-dark btn-lg download-button"
-                                id="button{{request[0]}}" onclick="approved({{request[0]}})"
+                        {% if request[4]==0 %}
+                        <button class="btn btn-success btn-lg download-button"
+                                id="button{{request[0]}}" onclick="approval({{request[0]}})"
                                 value="{{request[0]}}">Approve
                         </button>
+                        {% endif %}
                     </td>
                     <td>
-                        <button class="btn btn-dark btn-lg download-button"
+                        {% if request[4]==0 %}
+                        <button class="btn btn-danger btn-lg download-button"
                                 id="dbutton{{request[0]}}" onclick="declined({{request[0]}})"
                                 value="{{request[0]}}">Decline
                         </button>
+                        {% endif %}
+
                     </td>
                 </tr>
 

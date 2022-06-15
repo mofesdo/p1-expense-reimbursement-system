@@ -64,7 +64,7 @@
     <div class="container-fluid">
 
         <h1> Welcome back, {{user}}!</h1>
-        <div>
+        <div style="text-align:left">
             <h3>Filter by: </h3>
             <input type="checkbox" id="status0" name="status0" value="0" checked>
             <label for="status0">Ongoing</label>
@@ -79,8 +79,10 @@
             <label for="urgent0">Show NOT Urgent</label>
             <input type="checkbox" id="urgent1" name="urgent1" value="1" checked>
             <label for="urgent1">Show URGENT</label>
-
-
+            <a class="btn-sort">
+            <button class="btn btn-warning" onclick="sort_asc()">Sort: ASC</button>
+            <button class="btn btn-primary" onclick="sort_desc()">Sort: DESC</button>
+            </a>
         </div>
         <div class="tableFixHead">
             <table class="table">
@@ -157,6 +159,7 @@
 
 
 <script src="/static/scripts/requestFilterLogic.js"></script>
+<script src="/static/scripts/script1.js"></script>
 </body>
 
 </html>

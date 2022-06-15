@@ -14,7 +14,22 @@ body {
     padding: 0% 15% 3%;
     text-align: left;
   }
-  
+  #landing .container-fluid {
+    padding: 0% 15% 15%;
+    text-align: left;
+  }
+  .container-lg{
+    padding: 3% 0% 0%;
+
+    }
+
+
+  .btn-sort{
+  padding-left: 16%;
+  }
+  .btn-right{
+  text-align: right
+  }
   .colored-section {
     color: #000000;
   }

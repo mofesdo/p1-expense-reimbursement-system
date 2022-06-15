@@ -38,15 +38,20 @@ def logout():
 @app.route("/", methods=["GET"])
 @CheckToken(request)
 def home():
+    sortmode = "asc"
+    if "sortmode" in request.args:
+        sortmode = request.args["sortmode"]
     token = request.cookies.get("authToken")
     ismngr = isManager(token)
     usr = getUsername(token)
-    return get_dashboard(usr, "asc", ismngr)
+    return get_dashboard(usr, sortmode, ismngr)
 
 
 @app.route("/createrequest", methods=["GET"])
 def createrequest():
-    return get_request_form()
+    token = request.cookies.get("authToken")
+    ismngr = isManager(token)
+    return get_request_form(ismngr)
 
 
 @app.route('/requests/input', methods=["POST"])
@@ -64,8 +69,13 @@ def create_requests():
 
 @app.route("/cancelrequest", methods=["GET"])
 def cancelrequest():
+    sortmode = "asc"
+    if "sortmode" in request.args:
+        sortmode = request.args["sortmode"]
+    token = request.cookies.get("authToken")
+    ismngr = isManager(token)
     usr = getUsername(request.cookies.get("authToken"))
-    return get_cancellation_page(usr, "asc")
+    return get_cancellation_page(usr, sortmode, ismngr)
 
 
 @app.route("/cancelrequest/input", methods=["POST"])
@@ -78,7 +88,12 @@ def processCancellation():
 @CheckToken(request)
 @IsManager(request)
 def manageRequests():
-    return get_manager_page("asc")
+    sortmode = "asc"
+    if "sortmode" in request.args:
+        sortmode = request.args["sortmode"]
+    token = request.cookies.get("authToken")
+    ismngr = isManager(token)
+    return get_manager_page(sortmode, ismngr)
 
 
 @app.route("/manager/approve", methods=["POST"])

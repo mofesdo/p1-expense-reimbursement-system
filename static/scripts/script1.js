@@ -2,8 +2,16 @@
 //    document.getElementById("button{{request[0]}}".addEventListener("click", approved("{{request[0]}}")))
 //}
 
+function sort_asc() {
+window.location.replace(window.location.href.split('?')[0]+'?sortmode=asc');
+}
 
-function approved(num) {
+function sort_desc() {
+window.location.replace(window.location.href.split('?')[0]+'?sortmode=desc');
+}
+
+
+function approval(num) {
 
     const formData = new FormData();
     var response;
