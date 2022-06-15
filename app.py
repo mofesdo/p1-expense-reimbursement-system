@@ -28,6 +28,13 @@ def login_page():
     return get_index()
 
 
+@app.route("/logout", methods=["GET"])
+def logout():
+    response = make_response(redirect("/login"))
+    response.delete_cookie("authToken")
+    return response
+
+
 @app.route("/", methods=["GET"])
 @CheckToken(request)
 def home():

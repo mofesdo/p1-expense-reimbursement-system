@@ -21,7 +21,7 @@ def createRequestsClicked(usr, desc, price, urg, date):
 
 def cancelRequestClicked(request_id):
     cancel_reimbursement(request_id)
-    return redirect("/")
+    return redirect("/cancelrequest")
 
 
 def approveRequestClicked(request_id):

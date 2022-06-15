@@ -36,12 +36,9 @@
         <a class="navbar-brand" href="#">
             <img src="https://www.shareicon.net/data/256x256/2016/06/30/625014_chest_256x256.png" width="48"
                  height="48" alt="">
+            Blackbeard's Crew
         </a>
-        <a class="navbar-brand" href="">Blackbeard's Crew </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto" id="navbar-items">
                 <li class="nav-item">
@@ -115,15 +112,15 @@
                 <tbody>
                 {% for request in returnedRequests %}
 
-                <tr {% if request[4]==0 and request[5]==0 %} class="ongoing normal" {% endif %}
+                <tr {% if request[4]==0 and request[5]==0 %} class="ongoing normal bg-light" {% endif %}
                     {% if request[4]==1 and request[5]==0 %} class="bg-success approved normal" {% endif %}
                     {% if request[4]==2 and request[5]==0 %} class="bg-danger denied normal" {% endif %}
-                    {% if request[4]==3 and request[5]==0 %} class="bg-warning canceled normal" {% endif %}
+                    {% if request[4]==3 and request[5]==0 %} class="bg-secondary canceled normal" {% endif %}
 
-                    {% if request[4]==0 and request[5]==1 %} class="ongoing urgent" {% endif %}
+                    {% if request[4]==0 and request[5]==1 %} class="ongoing urgent bg-white" {% endif %}
                     {% if request[4]==1 and request[5]==1 %} class="bg-success approved urgent" {% endif %}
                     {% if request[4]==2 and request[5]==1 %} class="bg-danger denied urgent" {% endif %}
-                    {% if request[4]==3 and request[5]==1 %} class="bg-warning canceled urgent" {% endif %}>
+                    {% if request[4]==3 and request[5]==1 %} class="bg-secondary canceled urgent" {% endif %}>
                     <td>
                         {{request[0]}}
                     </td>
@@ -154,6 +151,7 @@
         </div>
         <hr>
         <button class="log btn btn-light"><a href="/log">View Log</a></button>
+        <button class="log btn btn-light"><a href="/logout">Logout</a></button>
     </div>
 </section>
 

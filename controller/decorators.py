@@ -1,5 +1,5 @@
 from model.authentication import checkToken, isManager
-from flask import render_template
+from flask import render_template, redirect
 
 
 class CheckToken:
@@ -11,7 +11,7 @@ class CheckToken:
             if checkToken(self.r.cookies.get("authToken")):
                 return func()
             else:
-                return render_template("error.html")
+                return redirect("/login")
 
         wrapper.__name__ = func.__name__
         return wrapper

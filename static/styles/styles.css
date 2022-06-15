@@ -1,19 +1,22 @@
 body {
     font-family: "Montserrat";
     text-align: center;
-    background-color: #f0932b;
+    background-image: url("/static/images/generalBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .table tbody tr > td.warning {
   background-color: #fff !important;
 }
   .container-fluid {
-    padding: 0%, 0%, 0%;
+    padding: 0% 15% 3%;
+    text-align: left;
   }
   
   .colored-section {
-    background-color: #f0932b;
-    color: #fff;
+    color: #000000;
   }
   
   .white-section {
@@ -49,6 +52,7 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat";
     font-weight: bold;
+    color: #000000;
   }
   
   p {
@@ -69,7 +73,9 @@ body {
   }
   
   .navbar {
-    padding: 0;
+    padding: 10px 0;
+    background-image: url("/static/images/bg-navbar.png");
+    background-size: 150px;
   }
   
   .navbar-brand {
