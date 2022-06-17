@@ -224,3 +224,16 @@ R: 2022-06-17 16:47:38.981537 user with token 2042451152144754774 has manager st
 R: 2022-06-17 16:47:39.658749 all records for manager_1 retrieved
 R: 2022-06-17 16:47:41.635891 user with token 2042451152144754774 has manager status True
 R: 2022-06-17 16:47:42.258884 all records for manager_1 retrieved
+R: 2022-06-17 16:55:33.653583 user with token 2201818215765305924 has manager status True
+R: 2022-06-17 16:55:34.387085 all records for manager_1 retrieved
+R: 2022-06-17 16:59:39.491955 user with token 2201818215765305924 has manager status True
+R: 2022-06-17 16:59:39.838365 user with token 2201818215765305924 has manager status True
+R: 2022-06-17 16:59:40.214497 all records for all users retrieved
+R: 2022-06-17 17:03:06.677618 user with token 2201818215765305924 has manager status True
+R: 2022-06-17 17:03:06.711213 user with token 2201818215765305924 has manager status True
+R: 2022-06-17 17:03:07.019546 user with token 2201818215765305924 has manager status True
+R: 2022-06-17 17:03:07.101467 Approved reimbursement request of id: 22
+R: 2022-06-17 17:03:07.375131 all records for all users retrieved
+R: 2022-06-17 17:03:08.072779 user with token 2201818215765305924 has manager status True
+R: 2022-06-17 17:03:08.409527 user with token 2201818215765305924 has manager status True
+R: 2022-06-17 17:03:08.736985 all records for all users retrieved

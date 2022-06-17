@@ -4,11 +4,14 @@ import re
 def validate_username(username):
     out = ""
 
-    r = "^[a-zA-Z0-9_]{3,50}$"
-    match = re.match(r, username)
+    try:
+        r = "^[a-zA-Z0-9_]{3,50}$"
+        match = re.match(r, username)
 
-    if match is not None:
-        out = username
+        if match is not None:
+            out = username
+    except:
+        pass
 
     return out
 
@@ -16,11 +19,14 @@ def validate_username(username):
 def validate_password(password):
     out = ""
 
-    r = "^[a-zA-Z0-9_]{3,50}$"
-    match = re.match(r, password)
+    try:
+        r = "^[a-zA-Z0-9_]{3,50}$"
+        match = re.match(r, password)
 
-    if match is not None:
-        out = password
+        if match is not None:
+            out = password
+    except:
+        pass
 
     return out
 
