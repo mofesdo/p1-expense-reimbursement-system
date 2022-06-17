@@ -15,8 +15,11 @@ def loginButtonClicked(usr, pwd):
 
 
 def createRequestsClicked(usr, desc, price, urg, date):
-    create_reimbursements(usr, desc, price, 0, urg, date)
-    return redirect("/")
+    if price == -1 or desc == "" or urg == -1:
+        return render_template("error.html")
+    else:
+        create_reimbursements(usr, desc, price, 0, urg, date)
+        return redirect("/")
 
 
 def cancelRequestClicked(request_id):

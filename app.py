@@ -4,6 +4,7 @@ from controller.request_filter import *
 from controller.decorators import CheckToken, IsManager
 from model.authentication import getUsername, isManager
 from service.validateSanitize import *
+from service.validateReimbursement import *
 import os
 
 # template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
@@ -61,10 +62,10 @@ def createrequest():
 @app.route('/requests/input', methods=["POST"])
 @CheckToken(request)
 def create_requests():
-    usr = getUsername(request.cookies.get("authToken"))
-    desc = request.form.get("description")
-    price = request.form.get("price")
-    urg = request.form.get("urgent")
+    usr = getUsername(validate_token(request.cookies.get("authToken")))
+    desc = validate_description(request.form.get("description"))
+    price = validate_price(request.form.get("price"))
+    urg = validate_urgent(request.form.get("urgent"))
     date = request.form.get("date")
     return createRequestsClicked(usr, desc, price, urg, date)
 
