@@ -4,6 +4,7 @@ import time
 import random
 import hashlib
 
+
 # Login Functions -----------------------
 def authenticate(username, password):
     connection = getConnection()

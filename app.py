@@ -12,6 +12,7 @@ app = Flask(__name__, static_url_path="/static") #, template_folder=template_dir
 
 
 @app.route("/log", methods=["GET"])
+@CheckToken(request)
 def give_log():
     return render_log()
 
@@ -29,6 +30,7 @@ def login_page():
 
 
 @app.route("/logout", methods=["GET"])
+@CheckToken(request)
 def logout():
     response = make_response(redirect("/login"))
     response.delete_cookie("authToken")
@@ -48,6 +50,7 @@ def home():
 
 
 @app.route("/createrequest", methods=["GET"])
+@CheckToken(request)
 def createrequest():
     token = request.cookies.get("authToken")
     ismngr = isManager(token)
@@ -68,6 +71,7 @@ def create_requests():
 
 
 @app.route("/cancelrequest", methods=["GET"])
+@CheckToken(request)
 def cancelrequest():
     sortmode = "asc"
     if "sortmode" in request.args:
@@ -79,6 +83,7 @@ def cancelrequest():
 
 
 @app.route("/cancelrequest/input", methods=["POST"])
+@CheckToken(request)
 def processCancellation():
     request_id = request.form.get("request_id")
     return cancelRequestClicked(request_id)
@@ -97,12 +102,14 @@ def manageRequests():
 
 
 @app.route("/manager/approve", methods=["POST"])
+@CheckToken(request)
 def managerApprove():
     rid = request.form.get("request_id")
     return approveRequestClicked(rid)
 
 
 @app.route("/manager/decline", methods=["POST"])
+@CheckToken(request)
 def managerDecline():
     rid = request.form.get("request_id")
     return declineRequestClicked(rid)
