@@ -211,3 +211,10 @@ R: 2022-06-15 17:35:34.115837 user with token 468348524378606142 has manager sta
 R: 2022-06-15 17:35:34.788375 all records for manager_1 retrieved that are ongoing
 R: 2022-06-15 17:35:43.589048 user with token 468348524378606142 has manager status True
 R: 2022-06-15 17:35:44.580814 all records for manager_1 retrieved
+R: 2022-06-15 20:06:10.668848 user with token 319178881349885473 has manager status False
+R: 2022-06-15 20:06:11.956511 all records for user_1 retrieved
+R: 2022-06-15 20:07:39.187856 user with token 319178881349885473 has manager status False
+R: 2022-06-15 20:08:00.553272 user with token 319178881349885473 has manager status False
+R: 2022-06-15 20:08:01.835779 all records for user_1 retrieved that are ongoing
+R: 2022-06-15 20:08:05.974251 user with token 319178881349885473 has manager status False
+R: 2022-06-15 20:08:07.271108 all records for user_1 retrieved

@@ -1,5 +1,5 @@
 import psycopg2
-from model.connection import getConnection, get_connection
+from model.connection import getConnection
 import time
 import random
 import hashlib
