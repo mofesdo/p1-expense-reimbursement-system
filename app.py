@@ -3,6 +3,7 @@ from controller.buttonActions import *
 from controller.request_filter import *
 from controller.decorators import CheckToken, IsManager
 from model.authentication import getUsername, isManager
+from service.validateSanitize import *
 import os
 
 # template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
@@ -43,7 +44,7 @@ def home():
     sortmode = "asc"
     if "sortmode" in request.args:
         sortmode = request.args["sortmode"]
-    token = request.cookies.get("authToken")
+    token = validate_token(request.cookies.get("authToken"))
     ismngr = isManager(token)
     usr = getUsername(token)
     return get_dashboard(usr, sortmode, ismngr)
@@ -52,7 +53,7 @@ def home():
 @app.route("/createrequest", methods=["GET"])
 @CheckToken(request)
 def createrequest():
-    token = request.cookies.get("authToken")
+    token = validate_token(request.cookies.get("authToken"))
     ismngr = isManager(token)
     return get_request_form(ismngr)
 
@@ -76,7 +77,7 @@ def cancelrequest():
     sortmode = "asc"
     if "sortmode" in request.args:
         sortmode = request.args["sortmode"]
-    token = request.cookies.get("authToken")
+    token = validate_token(request.cookies.get("authToken"))
     ismngr = isManager(token)
     usr = getUsername(request.cookies.get("authToken"))
     return get_cancellation_page(usr, sortmode, ismngr)
@@ -96,7 +97,7 @@ def manageRequests():
     sortmode = "asc"
     if "sortmode" in request.args:
         sortmode = request.args["sortmode"]
-    token = request.cookies.get("authToken")
+    token = validate_token(request.cookies.get("authToken"))
     ismngr = isManager(token)
     return get_manager_page(sortmode, ismngr)
 
@@ -105,14 +106,15 @@ def manageRequests():
 @CheckToken(request)
 @IsManager(request)
 def managerApprove():
-    rid = request.form.get("request_id")
+    rid = validate_requestId(request.form.get("request_id"))
     return approveRequestClicked(rid)
 
 
 @app.route("/manager/decline", methods=["POST"])
 @CheckToken(request)
+@IsManager(request)
 def managerDecline():
-    rid = request.form.get("request_id")
+    rid = validate_requestId(request.form.get("request_id"))
     return declineRequestClicked(rid)
 
 
