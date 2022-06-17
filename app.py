@@ -103,6 +103,7 @@ def manageRequests():
 
 @app.route("/manager/approve", methods=["POST"])
 @CheckToken(request)
+@IsManager(request)
 def managerApprove():
     rid = request.form.get("request_id")
     return approveRequestClicked(rid)
