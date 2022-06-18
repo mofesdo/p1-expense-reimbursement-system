@@ -5,13 +5,13 @@ def validate_description(description):
     out = ""
 
     try:
-        r = """[A-Za-z0-9_/?!"'-]{1,100}"""
+        r = """[A-Za-z0-9_/#^*(),.:;%?!&@~<>'"-][^\s-]{1,100}"""
         match = re.match(r, description)
 
         if match is not None:
             out = description
     except:
-        pass
+        out = ""
 
     return out
 

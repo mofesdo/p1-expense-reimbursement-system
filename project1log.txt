@@ -237,3 +237,30 @@ R: 2022-06-17 17:03:07.375131 all records for all users retrieved
 R: 2022-06-17 17:03:08.072779 user with token 2201818215765305924 has manager status True
 R: 2022-06-17 17:03:08.409527 user with token 2201818215765305924 has manager status True
 R: 2022-06-17 17:03:08.736985 all records for all users retrieved
+R: 2022-06-17 16:10:49.909012 user with token 103590489666423289 has manager status False
+R: 2022-06-17 16:10:51.247775 all records for user_1 retrieved
+R: 2022-06-17 16:10:56.809742 user with token 103590489666423289 has manager status False
+R: 2022-06-17 16:11:16.027216 Created a new reimbursement request with id: 42
+R: 2022-06-17 16:11:16.029192 Database connection closed
+R: 2022-06-17 16:11:17.288972 user with token 103590489666423289 has manager status False
+R: 2022-06-17 16:11:18.562000 all records for user_1 retrieved
+R: 2022-06-17 16:12:48.877526 user with token 103590489666423289 has manager status False
+R: 2022-06-17 16:12:54.368110 Created a new reimbursement request with id: 43
+R: 2022-06-17 16:12:54.369153 Database connection closed
+R: 2022-06-17 16:12:55.632011 user with token 103590489666423289 has manager status False
+R: 2022-06-17 16:12:56.890655 all records for user_1 retrieved
+R: 2022-06-17 16:15:51.542031 user with token 103590489666423289 has manager status False
+R: 2022-06-17 16:18:22.787853 user with token 1082834237061401533 has manager status False
+R: 2022-06-17 16:18:24.012688 all records for user_1 retrieved
+R: 2022-06-17 16:18:56.601185 Created a new reimbursement request with id: 44
+R: 2022-06-17 16:18:56.601185 Database connection closed
+R: 2022-06-17 16:18:57.828920 user with token 1082834237061401533 has manager status False
+R: 2022-06-17 16:18:59.086761 all records for user_1 retrieved
+R: 2022-06-17 16:20:15.798800 Created a new reimbursement request with id: 45
+R: 2022-06-17 16:20:15.800697 Database connection closed
+R: 2022-06-17 16:20:17.066724 user with token 1082834237061401533 has manager status False
+R: 2022-06-17 16:20:18.298722 all records for user_1 retrieved
+R: 2022-06-17 16:24:27.619337 Created a new reimbursement request with id: 46
+R: 2022-06-17 16:24:27.621312 Database connection closed
+R: 2022-06-17 16:24:28.872920 user with token 1082834237061401533 has manager status False
+R: 2022-06-17 16:24:30.128160 all records for user_1 retrieved
