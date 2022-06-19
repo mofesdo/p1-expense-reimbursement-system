@@ -30,38 +30,36 @@
 </head>
 
 <body>
-    <!-- Nav Bar -->
-    <div class="container-lg">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="https://www.shareicon.net/data/256x256/2016/06/30/625014_chest_256x256.png" width="48"
-                    height="48" alt="">
-            </a>
-            <a class="navbar-brand" href="">Blackbeard's Crew </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto" id="navbar-items">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/createrequest">Create A New Request</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cancelrequest">Cancel Ongoing Requests </a>
-                    </li>
-                    {% if isManager %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/manager">Accept / Decline Requests </a>
-                    </li>
-                    {% endif %}
-                </ul>
-            </div>
-        </nav>
-    </div>
+<!-- Nav Bar -->
+<div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.shareicon.net/data/256x256/2016/06/30/625014_chest_256x256.png" width="48"
+                 height="48" alt="">
+            Blackbeard's Crew
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" id="navbar-items">
+                <li class="nav-item">
+                    <a id="homeButton" class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="requestButton" class="nav-link" href="/createrequest">Create A New Request</a>
+                </li>
+                <li class="nav-item">
+                    <a id="cancelButton" class="nav-link" href="/cancelrequest">Cancel Ongoing Requests </a>
+                </li>
+                {% if isManager %}
+                <li class="nav-item">
+                    <a id="managerButton" class="nav-link" href="/manager">Accept / Decline Requests </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+</div>
+
     <div class="container-lg">
 
         <div>
@@ -86,7 +84,7 @@
                 <label for="date">Today's date:</label>
                 <input type="date" id="date" name="date" value={{currentDatetime}} min="2022-01-01" max="2022-12-31">
                 <br>
-                <input class="btn btn-dark btn-lg download-button" type="submit" value="Submit">
+                <input id="submitButton" class="btn btn-dark btn-lg download-button" type="submit" value="Submit">
             </form>
         </div>
     </div>
