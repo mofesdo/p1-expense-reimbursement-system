@@ -62,8 +62,17 @@
 
 <section class="colored-section" id="title">
     <div class="container-fluid">
+        <table>
+            <tr>
+                <td class="tdWelcome"><h1> Welcome back, {{user}}!</h1></td>
+                <td class="tdWelcome">
+                    <button id="debugLogButton" class="log btn btn-light"><a href="/log">View Log</a></button>
+                    <button id="logoutButton" class="log btn btn-light"><a href="/logout">Logout</a></button>
+                </td>
 
-        <h1> Welcome back, {{user}}!</h1>
+            </tr>
+        </table>
+
         <div style="text-align:left">
             <h3>Filter by: </h3>
             <input type="checkbox" id="status0" name="status0" value="0" checked>
@@ -80,8 +89,8 @@
             <input type="checkbox" id="urgent1" name="urgent1" value="1" checked>
             <label for="urgent1">Show URGENT</label>
             <a class="btn-sort">
-            <button class="btn btn-warning" onclick="sort_asc()">Sort: ASC</button>
-            <button class="btn btn-primary" onclick="sort_desc()">Sort: DESC</button>
+                <button class="btn btn-warning" onclick="sort_asc()">Sort: ASC</button>
+                <button class="btn btn-primary" onclick="sort_desc()">Sort: DESC</button>
             </a>
         </div>
         <div class="tableFixHead">
@@ -151,9 +160,7 @@
                 </tbody>
             </table>
         </div>
-        <hr>
-        <button id="debugLogButton" class="log btn btn-light"><a href="/log">View Log</a></button>
-        <button id="logoutButton" class="log btn btn-light"><a href="/logout">Logout</a></button>
+
     </div>
 </section>
 

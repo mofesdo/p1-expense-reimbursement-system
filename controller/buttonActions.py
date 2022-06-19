@@ -7,7 +7,7 @@ def loginButtonClicked(usr, pwd):
     auth = authenticate(usr, pwd)
 
     if auth is None:
-        return "Failed Login"
+        return render_template("error.html")
     else:
         response = make_response(redirect("/"))
         response.set_cookie("authToken", auth)

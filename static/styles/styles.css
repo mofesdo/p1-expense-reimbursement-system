@@ -17,6 +17,7 @@ body {
   #landing .container-fluid {
     padding: 0% 15% 15%;
     text-align: left;
+    text-align: left;
   }
   .container-lg{
     padding: 3% 0% 0%;
@@ -33,14 +34,10 @@ body {
   .colored-section {
     color: #000000;
   }
-  
   .white-section {
     background-color: #fff;
   }
-  #filter{
-  position: relative;
-  border: 3px solid #73AD21;
-  }
+
 
       .tableFixHead {
         overflow-y: auto;
@@ -52,12 +49,18 @@ body {
       }
       table {
         border-collapse: collapse;
+        border: 0px solid #fff
         width: 100%;
       }
       th,
       td {
         padding: 8px 16px;
         border: 1px solid #ccc;
+      }
+      .tdWelcome{
+      text-align: left;
+        padding: 8px 16px;
+        border: 0px solid #ccc;
       }
       th {
         background: #eee;

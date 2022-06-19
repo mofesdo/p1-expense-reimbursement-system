@@ -33,6 +33,36 @@ def step_impl(context):
     context.login_POM.submit_button().click()
 
 
+@when(u'I click the create request button')
+def step_impl(context):
+    pass
+
+
+@when(u'I enter {description} into the input field')
+def step_impl(context):
+    pass
+
+
+@when(u'I enter {price} into the input field')
+def step_impl(context):
+    pass
+
+
+@when(u'I enter {urgency} into the input field')
+def step_impl(context):
+    pass
+
+
+@when(u'I enter {date} into the input field')
+def step_impl(context):
+    pass
+
+
+@when(u'I click the submit button')
+def step_impl(context):
+    pass
+
+
 @then(u'I should be on a page with the title {title}')
 def step_impl(context, title):
     context.driver.implicitly_wait(wait_time)

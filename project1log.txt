@@ -286,3 +286,160 @@ R: 2022-06-19 13:20:57.109586 user with token 1607597601894390517 has manager st
 R: 2022-06-19 13:20:57.860804 all records for user_1 retrieved
 R: 2022-06-19 13:20:59.902988 user with token 1607597601894390517 has manager status False
 R: 2022-06-19 13:21:00.750241 all records for user_1 retrieved
+R: 2022-06-19 13:32:15.809702 user with token 1503759723767225759 has manager status False
+R: 2022-06-19 13:32:16.486294 all records for user_1 retrieved
+R: 2022-06-19 13:32:17.815748 user with token 1503759723767225759 has manager status False
+R: 2022-06-19 13:32:18.490012 all records for user_1 retrieved
+R: 2022-06-19 13:32:20.603861 user with token 1503759723767225759 has manager status False
+R: 2022-06-19 13:32:21.272775 all records for user_1 retrieved
+R: 2022-06-19 13:33:39.076886 user with token 2168756450874056178 has manager status False
+R: 2022-06-19 13:33:39.824655 all records for user_1 retrieved
+R: 2022-06-19 13:33:41.067710 user with token 2168756450874056178 has manager status False
+R: 2022-06-19 13:33:41.736942 all records for user_1 retrieved
+R: 2022-06-19 13:33:43.907913 user with token 2168756450874056178 has manager status False
+R: 2022-06-19 13:33:44.579073 all records for user_1 retrieved
+R: 2022-06-19 13:42:27.688667 user with token 2068897705327812611 has manager status False
+R: 2022-06-19 13:42:28.358835 all records for user_1 retrieved
+R: 2022-06-19 13:42:29.683585 user with token 2068897705327812611 has manager status False
+R: 2022-06-19 13:42:30.399950 all records for user_1 retrieved
+R: 2022-06-19 13:42:32.600330 user with token 2068897705327812611 has manager status False
+R: 2022-06-19 13:42:33.280362 all records for user_1 retrieved
+R: 2022-06-19 14:02:34.013499 user with token 203551489794204858 has manager status False
+R: 2022-06-19 14:02:34.658825 all records for user_1 retrieved
+R: 2022-06-19 14:02:36.043891 user with token 203551489794204858 has manager status False
+R: 2022-06-19 14:02:36.797900 all records for user_1 retrieved
+R: 2022-06-19 14:02:38.975256 user with token 203551489794204858 has manager status False
+R: 2022-06-19 14:02:39.644816 all records for user_1 retrieved
+R: 2022-06-19 14:14:52.681766 user with token 557900447926413212 has manager status False
+R: 2022-06-19 14:14:53.365675 all records for user_1 retrieved
+R: 2022-06-19 14:14:54.714430 user with token 557900447926413212 has manager status False
+R: 2022-06-19 14:14:55.438421 all records for user_1 retrieved
+R: 2022-06-19 14:14:57.658477 user with token 557900447926413212 has manager status False
+R: 2022-06-19 14:14:58.345871 all records for user_1 retrieved
+R: 2022-06-19 14:17:43.163603 user with token 334171272150739015 has manager status False
+R: 2022-06-19 14:17:43.841208 all records for user_1 retrieved
+R: 2022-06-19 14:17:46.061657 user with token 334171272150739015 has manager status False
+R: 2022-06-19 14:17:46.769111 all records for user_1 retrieved
+R: 2022-06-19 14:17:48.879951 user with token 334171272150739015 has manager status False
+R: 2022-06-19 14:17:49.617038 all records for user_1 retrieved
+R: 2022-06-19 14:21:46.431107 user with token 1597868023500204346 has manager status False
+R: 2022-06-19 14:21:47.115752 all records for user_1 retrieved
+R: 2022-06-19 14:21:49.246622 user with token 1597868023500204346 has manager status False
+R: 2022-06-19 14:21:49.995360 all records for user_1 retrieved
+R: 2022-06-19 14:21:52.018915 user with token 1597868023500204346 has manager status False
+R: 2022-06-19 14:21:52.706897 all records for user_1 retrieved
+R: 2022-06-19 14:23:06.239168 user with token 1441870413262973321 has manager status False
+R: 2022-06-19 14:23:06.891081 all records for user_1 retrieved
+R: 2022-06-19 14:23:08.247666 user with token 1441870413262973321 has manager status False
+R: 2022-06-19 14:23:08.876862 all records for user_1 retrieved
+R: 2022-06-19 14:23:11.020898 user with token 1441870413262973321 has manager status False
+R: 2022-06-19 14:23:11.722096 all records for user_1 retrieved
+R: 2022-06-19 14:25:41.654876 user with token 1454084338180123173 has manager status False
+R: 2022-06-19 14:25:42.384276 all records for user_1 retrieved
+R: 2022-06-19 14:25:43.680923 user with token 1454084338180123173 has manager status False
+R: 2022-06-19 14:25:44.356939 all records for user_1 retrieved
+R: 2022-06-19 14:26:19.552071 user with token 69701342275267147 has manager status False
+R: 2022-06-19 14:26:20.191257 all records for user_1 retrieved
+R: 2022-06-19 14:26:21.522454 user with token 69701342275267147 has manager status False
+R: 2022-06-19 14:26:22.221517 all records for user_1 retrieved
+R: 2022-06-19 14:30:18.476188 user with token 824561154720230202 has manager status False
+R: 2022-06-19 14:30:19.158577 all records for user_1 retrieved
+R: 2022-06-19 14:30:20.578341 user with token 824561154720230202 has manager status False
+R: 2022-06-19 14:30:21.290187 all records for user_1 retrieved
+R: 2022-06-19 14:36:21.522269 user with token 49849659835772069 has manager status False
+R: 2022-06-19 14:36:22.196414 all records for user_1 retrieved
+R: 2022-06-19 14:36:23.516354 user with token 49849659835772069 has manager status False
+R: 2022-06-19 14:36:24.189635 all records for user_1 retrieved
+R: 2022-06-19 14:41:11.134514 user with token 1916368504520404422 has manager status False
+R: 2022-06-19 14:41:11.767438 all records for user_1 retrieved
+R: 2022-06-19 14:41:13.137548 user with token 1916368504520404422 has manager status False
+R: 2022-06-19 14:41:13.842023 all records for user_1 retrieved
+R: 2022-06-19 14:41:16.002271 user with token 1916368504520404422 has manager status False
+R: 2022-06-19 14:41:16.725413 all records for user_1 retrieved
+R: 2022-06-19 14:45:31.191076 user with token 1648235551656996554 has manager status False
+R: 2022-06-19 14:45:31.803286 all records for user_1 retrieved
+R: 2022-06-19 14:45:33.056199 user with token 1648235551656996554 has manager status False
+R: 2022-06-19 14:45:33.776285 all records for user_1 retrieved
+R: 2022-06-19 14:45:35.896554 user with token 1648235551656996554 has manager status False
+R: 2022-06-19 14:45:36.618531 all records for user_1 retrieved
+R: 2022-06-19 14:49:42.039617 user with token 1668796968852221893 has manager status False
+R: 2022-06-19 14:49:42.703422 all records for user_1 retrieved
+R: 2022-06-19 14:49:44.005456 user with token 1668796968852221893 has manager status False
+R: 2022-06-19 14:49:44.765843 all records for user_1 retrieved
+R: 2022-06-19 14:49:46.894244 user with token 1668796968852221893 has manager status False
+R: 2022-06-19 14:49:47.614710 all records for user_1 retrieved
+R: 2022-06-19 14:50:10.560619 user with token 1395635949314994146 has manager status False
+R: 2022-06-19 14:50:11.215562 all records for user_1 retrieved
+R: 2022-06-19 14:50:12.518170 user with token 1395635949314994146 has manager status False
+R: 2022-06-19 14:50:13.201414 all records for user_1 retrieved
+R: 2022-06-19 14:50:15.363379 user with token 1395635949314994146 has manager status False
+R: 2022-06-19 14:50:16.032611 all records for user_1 retrieved
+R: 2022-06-19 15:00:10.578783 user with token 1131721272811549242 has manager status False
+R: 2022-06-19 15:00:11.228488 all records for user_1 retrieved
+R: 2022-06-19 15:00:12.506922 user with token 1131721272811549242 has manager status False
+R: 2022-06-19 15:00:13.166001 all records for user_1 retrieved
+R: 2022-06-19 15:00:14.583522 user with token 1131721272811549242 has manager status False
+R: 2022-06-19 15:00:15.265933 all records for user_1 retrieved
+R: 2022-06-19 15:12:39.648018 user with token 548122491020604711 has manager status False
+R: 2022-06-19 15:12:40.297552 all records for user_1 retrieved
+R: 2022-06-19 15:12:41.578927 user with token 548122491020604711 has manager status False
+R: 2022-06-19 15:12:42.254377 all records for user_1 retrieved
+R: 2022-06-19 15:12:44.431344 user with token 548122491020604711 has manager status False
+R: 2022-06-19 15:12:45.088120 all records for user_1 retrieved
+R: 2022-06-19 15:13:48.527333 user with token 679145244388717932 has manager status False
+R: 2022-06-19 15:13:49.167844 all records for user_1 retrieved
+R: 2022-06-19 15:13:51.316687 user with token 679145244388717932 has manager status False
+R: 2022-06-19 15:13:51.990812 all records for user_1 retrieved
+R: 2022-06-19 15:13:54.078853 user with token 679145244388717932 has manager status False
+R: 2022-06-19 15:13:54.752837 all records for user_1 retrieved
+R: 2022-06-19 15:16:44.689396 user with token 1657501685900080668 has manager status False
+R: 2022-06-19 15:16:45.434446 all records for user_1 retrieved
+R: 2022-06-19 15:16:47.597439 user with token 1657501685900080668 has manager status False
+R: 2022-06-19 15:16:48.263103 all records for user_1 retrieved
+R: 2022-06-19 15:16:50.359118 user with token 1657501685900080668 has manager status False
+R: 2022-06-19 15:16:51.024688 all records for user_1 retrieved
+R: 2022-06-19 15:18:23.623141 user with token 1030529369416627839 has manager status False
+R: 2022-06-19 15:18:24.385014 all records for user_1 retrieved
+R: 2022-06-19 15:18:55.066464 user with token 1262235502051817118 has manager status False
+R: 2022-06-19 15:18:55.739613 all records for user_1 retrieved
+R: 2022-06-19 15:18:59.233790 user with token 1140013789508236963 has manager status True
+R: 2022-06-19 15:18:59.881408 all records for manager_1 retrieved
+R: 2022-06-19 15:20:21.072055 user with token 607774295362336501 has manager status False
+R: 2022-06-19 15:20:21.700871 all records for user_1 retrieved
+R: 2022-06-19 15:20:25.433120 user with token 822256028592600825 has manager status True
+R: 2022-06-19 15:20:26.089576 all records for manager_1 retrieved
+R: 2022-06-19 15:23:29.081938 user with token 356419889938790321 has manager status False
+R: 2022-06-19 15:23:29.724380 all records for user_1 retrieved
+R: 2022-06-19 15:23:33.281517 user with token 1508896092336388020 has manager status True
+R: 2022-06-19 15:23:33.951584 all records for manager_1 retrieved
+R: 2022-06-19 15:25:45.551720 user with token 851061034217076793 has manager status False
+R: 2022-06-19 15:25:46.246586 all records for user_1 retrieved
+R: 2022-06-19 15:25:49.763020 user with token 386834580586330173 has manager status True
+R: 2022-06-19 15:25:50.438404 all records for manager_1 retrieved
+R: 2022-06-19 15:28:51.401605 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:28:52.056125 all records for user_1 retrieved
+R: 2022-06-19 15:29:10.896000 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:29:11.622110 all records for user_1 retrieved
+R: 2022-06-19 15:31:16.152557 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:31:16.830074 all records for user_1 retrieved
+R: 2022-06-19 15:32:03.644342 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:32:04.296843 all records for user_1 retrieved
+R: 2022-06-19 15:32:34.017367 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:32:34.676460 all records for user_1 retrieved
+R: 2022-06-19 15:33:57.556351 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:33:58.289424 all records for user_1 retrieved
+R: 2022-06-19 15:34:23.242459 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:34:23.915489 all records for user_1 retrieved
+R: 2022-06-19 15:36:22.432827 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:36:23.073026 all records for user_1 retrieved
+R: 2022-06-19 15:39:28.146799 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:39:28.790479 all records for user_1 retrieved
+R: 2022-06-19 15:39:36.927425 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:39:39.781485 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:39:40.469920 all records for user_1 retrieved that are ongoing
+R: 2022-06-19 15:39:44.842324 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:39:45.635432 all records for user_1 retrieved
+R: 2022-06-19 15:43:20.974945 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:43:21.638153 all records for user_1 retrieved
+R: 2022-06-19 15:44:02.777211 user with token 2197090315766036722 has manager status False
+R: 2022-06-19 15:44:03.426655 all records for user_1 retrieved
