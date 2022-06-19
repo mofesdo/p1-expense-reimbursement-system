@@ -17,3 +17,7 @@ class loginPage:
 
     def submit_button(self):
         return self.driver.find_element(By.ID, "loginButton")
+
+    def logout_button(self):
+        return self.driver.find_element(By.ID, "logoutButton")
+
