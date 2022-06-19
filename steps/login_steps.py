@@ -1,16 +1,21 @@
+import selenium.common
 from behave import when, then, given
 from selenium.webdriver.support.select import Select
-
-
-@given(u'If I am logged in, I will log out')
-def final_step(context):
-    context.driver.implicitly_wait(1)
-    context.login_POM.logout_button().click()
+from utils.constants import site_url
 
 
 @given(u'I am on the site')
 def first_step(context):
-    context.driver.get("http://localhost:5000")
+    context.driver.get(site_url)
+
+
+@given(u'If I am logged in, I will log out')
+def logout_step(context):
+    context.driver.implicitly_wait(1)
+    try:
+        context.login_POM.logout_button().click()
+    except selenium.common.NoSuchElementException:
+        pass
 
 
 @when(u'I enter {username} into the input field')
