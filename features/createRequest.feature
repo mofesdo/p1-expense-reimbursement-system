@@ -23,3 +23,4 @@ Feature: User should be able to login and create a new reimbursement request
             | manager_1     | password      | Error         | ``                 | 222.22 | 1       | 06/19/2022  |
             | manager_1     | password      | Error         | error price        | 1222.22| 1       | 06/19/2022  |
             | manager_1     | password      | Dashboard     | make urgency = 0   | 222.22 | 3       | 06/19/2022  |
+            | manager_1     | password      | Dashboard     | INVALID DATE       | 222.22 | 0       | 06/1998/20  |

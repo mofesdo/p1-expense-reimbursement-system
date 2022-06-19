@@ -66,7 +66,7 @@ def create_requests():
     desc = validate_description(request.form.get("description"))
     price = validate_price(request.form.get("price"))
     urg = validate_urgent(request.form.get("urgent"))
-    date = request.form.get("date")
+    date = validate_date(request.form.get("date"))
     return createRequestsClicked(usr, desc, price, urg, date)
 
 # dan was here

@@ -43,6 +43,17 @@ def validate_urgent(urgent):
 
 
 def validate_date(date):
-    pass
+    out = ""
+
+    try:
+        r = """[0-9]{2,4}/[0-9]{2}/[0-9]{2,4}"""
+        match = re.match(r, date)
+
+        if match is not None:
+            out = date
+    except:
+        out = ""
+
+    return out
 
 

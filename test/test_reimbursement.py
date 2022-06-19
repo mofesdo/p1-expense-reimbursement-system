@@ -39,6 +39,7 @@ def test_description(dummy_description, expected):
 def test_number(dummy_price, expected):
     assert (validate_price(dummy_price) != -1) == expected
 
+
 @pytest.mark.parametrize("dummy_urgent, expected", (
         (234454512, False),
         ("123456789",False),
@@ -56,3 +57,22 @@ def test_number(dummy_price, expected):
                          )
 def test_urgent(dummy_urgent, expected):
     assert (validate_urgent(dummy_urgent) != -1) == expected
+
+
+@pytest.mark.parametrize("dummy_date, expected", (
+        (234454512, False),
+        ("123456789", False),
+        ("12/10/1998", True),
+        (True, False),
+        (False, False),
+        ("1998/12/10", True),
+        ("06/19/2022", True),
+        (420.69, False),
+        ("", False),
+        (999, False),
+        (0, False),
+        (1, False)
+)
+                         )
+def test_date(dummy_date, expected):
+    assert (validate_date(dummy_date) != "") == expected
