@@ -1058,3 +1058,59 @@ R: 2022-06-19 19:39:50.625920 all records for user_1 retrieved
 R: 2022-06-19 19:39:51.812615 user with token 781909999167189957 has manager status False
 R: 2022-06-19 19:41:02.220571 user with token 39802872336987150 has manager status False
 R: 2022-06-19 19:41:02.890173 all records for user_1 retrieved
+R: 2022-06-20 01:02:13.907135 user with token 1133531618706718549 has manager status False
+R: 2022-06-20 01:02:14.621874 all records for user_1 retrieved
+R: 2022-06-20 01:11:07.169895 user with token 1518310660649255274 has manager status False
+R: 2022-06-20 01:11:07.825598 all records for user_1 retrieved
+R: 2022-06-20 01:11:09.061863 user with token 1518310660649255274 has manager status False
+E: 2022-06-20 01:11:10.753927 invalid input syntax for type date: ""
+LINE 1: ...default, 'user_1', 'yo its user 1', 123.43, 0, 0, '') RETURN...
+                                                             ^
+
+R: 2022-06-20 01:11:10.791885 Database connection closed
+R: 2022-06-20 01:11:11.472291 user with token 1518310660649255274 has manager status False
+R: 2022-06-20 01:11:12.088572 all records for user_1 retrieved
+R: 2022-06-20 01:11:18.455017 user with token 1487854738315673974 has manager status True
+R: 2022-06-20 01:11:19.120505 all records for manager_1 retrieved
+R: 2022-06-20 01:11:20.458187 user with token 1487854738315673974 has manager status True
+E: 2022-06-20 01:11:21.780752 invalid input syntax for type date: ""
+LINE 1: ..., 'manager_1', 'its the manager_1', 420.69, 0, 1, '') RETURN...
+                                                             ^
+
+R: 2022-06-20 01:11:21.821997 Database connection closed
+R: 2022-06-20 01:11:22.520811 user with token 1487854738315673974 has manager status True
+R: 2022-06-20 01:11:23.195016 all records for manager_1 retrieved
+R: 2022-06-20 01:11:31.975045 user with token 1059649934878310787 has manager status True
+R: 2022-06-20 01:11:32.639621 all records for manager_1 retrieved
+R: 2022-06-20 01:11:33.999490 user with token 1059649934878310787 has manager status True
+R: 2022-06-20 01:11:39.067818 user with token 1059649934878310787 has manager status True
+R: 2022-06-20 01:11:39.725544 all records for manager_1 retrieved
+R: 2022-06-20 01:11:43.003563 user with token 1909314587672445326 has manager status True
+R: 2022-06-20 01:11:43.696114 all records for manager_1 retrieved
+R: 2022-06-20 01:11:45.139721 user with token 1909314587672445326 has manager status True
+R: 2022-06-20 01:11:49.217085 user with token 1909314587672445326 has manager status True
+R: 2022-06-20 01:11:49.845111 all records for manager_1 retrieved
+R: 2022-06-20 01:11:53.069828 user with token 2030249321855713688 has manager status True
+R: 2022-06-20 01:11:53.808925 all records for manager_1 retrieved
+R: 2022-06-20 01:11:55.160999 user with token 2030249321855713688 has manager status True
+E: 2022-06-20 01:11:56.378685 invalid input syntax for type date: ""
+LINE 1: ...t, 'manager_1', 'make urgency = 0', 222.22, 0, 0, '') RETURN...
+                                                             ^
+
+R: 2022-06-20 01:11:56.418048 Database connection closed
+R: 2022-06-20 01:11:57.166806 user with token 2030249321855713688 has manager status True
+R: 2022-06-20 01:11:57.906230 all records for manager_1 retrieved
+R: 2022-06-20 01:12:04.215449 user with token 1400956486081839523 has manager status True
+R: 2022-06-20 01:12:04.880685 all records for manager_1 retrieved
+R: 2022-06-20 01:12:06.162095 user with token 1400956486081839523 has manager status True
+E: 2022-06-20 01:12:07.892409 invalid input syntax for type date: ""
+LINE 1: ...fault, 'manager_1', 'INVALID DATE', 222.22, 0, 0, '') RETURN...
+                                                             ^
+
+R: 2022-06-20 01:12:07.933717 Database connection closed
+R: 2022-06-20 01:12:08.578752 user with token 1400956486081839523 has manager status True
+R: 2022-06-20 01:12:09.246653 all records for manager_1 retrieved
+R: 2022-06-20 01:12:15.623746 user with token 1675129056316621231 has manager status False
+R: 2022-06-20 01:12:16.323846 all records for user_1 retrieved
+R: 2022-06-20 01:12:19.641123 user with token 1273708905887695283 has manager status True
+R: 2022-06-20 01:12:20.342735 all records for manager_1 retrieved
