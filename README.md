@@ -31,11 +31,26 @@ would feel more compelled to reimburse him.
     - Cancel ongoing requests
 
 
-- Managers/Captain/First-Mate
+- Managers/Captain/First-Mate:
   - Have all the same features as Employees
   - Can approve/deny requests
 
 
-- Additional Features
+- Additional Features:
   - Users can sort requests by date, ascending or descending
   - Users can filter requests by request status and urgency
+
+- Security Features:
+  - Session token is checked before main API is served on most calls/requests
+  - All requests to manager parts of API are checked to see if user is a manager
+  - SQL injection protection established through Psycopg
+  - Input validation via Regex and supporting logic
+
+
+## Business Requirements Met
+
+- Requests must be for $1-$1000, via UI and direct requests
+- Requests descriptions can be 100 characters, max
+- Reimbursement requests are represented using multiple numbers
+
+
