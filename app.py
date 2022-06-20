@@ -67,6 +67,7 @@ def create_requests():
     price = validate_price(request.form.get("price"))
     urg = validate_urgent(request.form.get("urgent"))
     date = validate_date(request.form.get("date"))
+    log_regular(f"request made with this data: {usr}, {desc}, {price}, {urg}, {date}")
     return createRequestsClicked(usr, desc, price, urg, date)
 
 # dan was here

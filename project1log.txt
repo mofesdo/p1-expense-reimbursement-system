@@ -1114,3 +1114,518 @@ R: 2022-06-20 01:12:15.623746 user with token 1675129056316621231 has manager st
 R: 2022-06-20 01:12:16.323846 all records for user_1 retrieved
 R: 2022-06-20 01:12:19.641123 user with token 1273708905887695283 has manager status True
 R: 2022-06-20 01:12:20.342735 all records for manager_1 retrieved
+R: 2022-06-20 09:19:28.843084 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:19:29.500703 all records for user_1 retrieved
+R: 2022-06-20 09:19:35.316878 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:20:16.679600 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:20:17.370262 all records for user_1 retrieved
+R: 2022-06-20 09:22:52.783474 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:23:10.924730 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:23:22.985899 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:23:25.188622 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:23:25.837401 all records for user_1 retrieved
+R: 2022-06-20 09:30:32.065573 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:30:32.739421 all records for user_1 retrieved
+R: 2022-06-20 09:30:34.233528 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:30:42.870884 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:30:43.517921 all records for user_1 retrieved
+R: 2022-06-20 09:31:26.723464 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:33:42.836702 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:33:48.369195 request made with this data: user_1, , 100.1, 0, 
+R: 2022-06-20 09:33:51.101864 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:33:51.770094 all records for user_1 retrieved
+R: 2022-06-20 09:39:29.406315 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:39:34.250534 request made with this data: user_1, i got some ship parts bro, 100.1, 0, 
+E: 2022-06-20 09:39:34.571286 invalid input syntax for type date: ""
+LINE 1: ...ser_1', 'i got some ship parts bro', 100.1, 0, 0, '') RETURN...
+                                                             ^
+
+R: 2022-06-20 09:39:34.607055 Database connection closed
+R: 2022-06-20 09:39:35.303029 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:39:35.965259 all records for user_1 retrieved
+R: 2022-06-20 09:39:39.457653 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:39:40.146652 all records for user_1 retrieved
+R: 2022-06-20 09:40:26.243225 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:40:32.039181 request made with this data: user_1, i got some ship parts bro, 100.1, 0, 
+E: 2022-06-20 09:40:32.401559 invalid input syntax for type date: ""
+LINE 1: ...ser_1', 'i got some ship parts bro', 100.1, 0, 0, '') RETURN...
+                                                             ^
+
+R: 2022-06-20 09:40:32.440530 Database connection closed
+R: 2022-06-20 09:40:33.148632 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:40:33.879982 all records for user_1 retrieved
+R: 2022-06-20 09:46:00.026473 user with token 2229959116366836704 has manager status False
+E: 2022-06-20 09:46:08.049534 error with date None
+R: 2022-06-20 09:46:08.050535 request made with this data: user_1, i got some ship parts bro, 100.1, 0, 
+E: 2022-06-20 09:46:08.396200 invalid input syntax for type date: ""
+LINE 1: ...ser_1', 'i got some ship parts bro', 100.1, 0, 0, '') RETURN...
+                                                             ^
+
+R: 2022-06-20 09:46:08.463483 Database connection closed
+R: 2022-06-20 09:46:09.162724 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:46:09.899060 all records for user_1 retrieved
+E: 2022-06-20 09:47:22.607904 error with date None
+E: 2022-06-20 09:47:22.610447 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+E: 2022-06-20 09:47:22.614456 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+E: 2022-06-20 09:47:22.617234 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+E: 2022-06-20 09:47:22.619904 error with date None
+R: 2022-06-20 09:50:47.477608 user with token 2229959116366836704 has manager status False
+E: 2022-06-20 09:50:55.699617 error with date None
+R: 2022-06-20 09:50:55.700569 request made with this data: user_1, , 100.1, 0, 
+R: 2022-06-20 09:50:58.674211 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:50:59.323832 all records for user_1 retrieved
+R: 2022-06-20 09:51:31.323505 user with token 2229959116366836704 has manager status False
+E: 2022-06-20 09:51:36.038433 error with date None
+R: 2022-06-20 09:51:36.039532 request made with this data: user_1, , 100.1, 0, 
+R: 2022-06-20 09:51:40.054092 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:51:40.741280 all records for user_1 retrieved
+R: 2022-06-20 09:54:42.809373 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:54:48.059405 validating 2022-06-20
+E: 2022-06-20 09:54:48.060920 error with date None
+R: 2022-06-20 09:54:48.062025 request made with this data: user_1, , 100.1, 0, 
+R: 2022-06-20 09:54:50.291868 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:54:50.932054 all records for user_1 retrieved
+R: 2022-06-20 09:56:23.381676 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:56:28.745748 validating 2022-06-20
+E: 2022-06-20 09:56:28.747083 error with date <re.Match object; span=(0, 10), match='2022-06-20'>
+R: 2022-06-20 09:56:28.748256 request made with this data: user_1, i got some ship parts bro, 100.1, 0, 2022-06-20
+R: 2022-06-20 09:56:29.119061 Created a new reimbursement request with id: 84
+R: 2022-06-20 09:56:29.120156 Database connection closed
+R: 2022-06-20 09:56:29.802501 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 09:56:30.490892 all records for user_1 retrieved
+R: 2022-06-20 09:57:06.954258 validating 234454512
+R: 2022-06-20 09:57:06.956262 validating 123456789
+E: 2022-06-20 09:57:06.956830 error with date None
+R: 2022-06-20 09:57:06.958326 validating 12/10/1998
+E: 2022-06-20 09:57:06.958888 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 09:57:06.960183 validating True
+R: 2022-06-20 09:57:06.961409 validating False
+R: 2022-06-20 09:57:06.962409 validating 1998/12/10
+E: 2022-06-20 09:57:06.963621 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 09:57:06.964978 validating 06/19/2022
+E: 2022-06-20 09:57:06.964978 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 09:57:06.967540 validating 420.69
+R: 2022-06-20 09:57:06.968519 validating 
+E: 2022-06-20 09:57:06.969519 error with date None
+R: 2022-06-20 09:57:06.970137 validating 999
+R: 2022-06-20 09:57:06.972149 validating 0
+R: 2022-06-20 09:57:06.973149 validating 1
+R: 2022-06-20 09:57:46.645224 validating 234454512
+R: 2022-06-20 09:57:46.646652 validating 123456789
+E: 2022-06-20 09:57:46.647394 error with date None
+R: 2022-06-20 09:57:46.648135 validating 12/10/1998
+E: 2022-06-20 09:57:46.649155 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 09:57:46.650558 validating True
+R: 2022-06-20 09:57:46.653306 validating False
+R: 2022-06-20 09:57:46.655272 validating 1998/12/10
+E: 2022-06-20 09:57:46.655272 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 09:57:46.656680 validating 06/19/2022
+E: 2022-06-20 09:57:46.657716 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 09:57:46.658745 validating 420.69
+R: 2022-06-20 09:57:46.660227 validating 
+E: 2022-06-20 09:57:46.661350 error with date None
+R: 2022-06-20 09:57:46.662020 validating 999
+R: 2022-06-20 09:57:46.664136 validating 0
+R: 2022-06-20 09:57:46.666043 validating 1
+R: 2022-06-20 09:58:27.994825 validating 234454512
+R: 2022-06-20 09:58:27.997197 validating 123456789
+E: 2022-06-20 09:58:27.998487 error with date None
+R: 2022-06-20 09:58:28.000638 validating 12/10/1998
+E: 2022-06-20 09:58:28.001273 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 09:58:28.002595 validating True
+R: 2022-06-20 09:58:28.004643 validating False
+R: 2022-06-20 09:58:28.006142 validating 1998/12/10
+E: 2022-06-20 09:58:28.006142 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 09:58:28.008131 validating 06/19/2022
+E: 2022-06-20 09:58:28.008131 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 09:58:28.010132 validating 420.69
+R: 2022-06-20 09:58:28.012125 validating 
+E: 2022-06-20 09:58:28.012297 error with date None
+R: 2022-06-20 09:58:28.013752 validating 999
+R: 2022-06-20 09:58:28.015733 validating 0
+R: 2022-06-20 09:58:28.016733 validating 1
+R: 2022-06-20 10:00:53.851238 validating 234454512
+R: 2022-06-20 10:00:53.853253 validating 123456789
+E: 2022-06-20 10:00:53.854248 error with date None
+R: 2022-06-20 10:00:53.856308 validating 12/10/1998
+E: 2022-06-20 10:00:53.856308 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 10:00:53.858324 validating True
+R: 2022-06-20 10:00:53.860715 validating False
+R: 2022-06-20 10:00:53.863375 validating 1998/12/10
+E: 2022-06-20 10:00:53.863375 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 10:00:53.865372 validating 06/19/2022
+E: 2022-06-20 10:00:53.865372 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 10:00:53.867456 validating 420.69
+R: 2022-06-20 10:00:53.868410 validating 
+E: 2022-06-20 10:00:53.868410 error with date None
+R: 2022-06-20 10:00:53.870457 validating 999
+R: 2022-06-20 10:00:53.873164 validating 0
+R: 2022-06-20 10:00:53.875232 validating 1
+R: 2022-06-20 10:01:08.241563 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 10:01:31.664592 validating 2022-06-20
+E: 2022-06-20 10:01:31.665591 error with date <re.Match object; span=(0, 10), match='2022-06-20'>
+R: 2022-06-20 10:01:31.666711 request made with this data: user_1, , 488.99, 1, 2022-06-20
+R: 2022-06-20 10:01:49.214108 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 10:01:49.892701 all records for user_1 retrieved
+R: 2022-06-20 10:04:14.943250 validating 234454512
+R: 2022-06-20 10:04:14.946240 validating 123456789
+E: 2022-06-20 10:04:14.946240 error with date None
+R: 2022-06-20 10:04:14.948432 validating 12/10/1998
+E: 2022-06-20 10:04:14.948944 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 10:04:14.951162 validating True
+R: 2022-06-20 10:04:14.953085 validating False
+R: 2022-06-20 10:04:14.954084 validating 1998/12/10
+E: 2022-06-20 10:04:14.955705 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 10:04:14.958488 validating 06/19/2022
+E: 2022-06-20 10:04:14.958839 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 10:04:14.961488 validating 420.69
+R: 2022-06-20 10:04:14.964495 validating 
+E: 2022-06-20 10:04:14.964726 error with date None
+R: 2022-06-20 10:04:14.966048 validating 999
+R: 2022-06-20 10:04:14.968281 validating 0
+R: 2022-06-20 10:04:14.970389 validating 1
+R: 2022-06-20 10:06:25.064336 validating 234454512
+R: 2022-06-20 10:06:25.067379 validating 123456789
+E: 2022-06-20 10:06:25.067379 error with date None
+R: 2022-06-20 10:06:25.069406 validating 12/10/1998
+E: 2022-06-20 10:06:25.069406 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 10:06:25.071407 validating True
+R: 2022-06-20 10:06:25.073418 validating False
+R: 2022-06-20 10:06:25.076890 validating 1998/12/10
+E: 2022-06-20 10:06:25.077388 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 10:06:25.079495 validating 06/19/2022
+E: 2022-06-20 10:06:25.080494 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 10:06:25.082870 validating 420.69
+R: 2022-06-20 10:06:25.085882 validating 
+E: 2022-06-20 10:06:25.086149 error with date None
+R: 2022-06-20 10:06:25.087670 validating 999
+R: 2022-06-20 10:06:25.089685 validating 0
+R: 2022-06-20 10:06:25.092282 validating 1
+R: 2022-06-20 10:06:36.535398 validating 234454512
+R: 2022-06-20 10:06:36.538313 validating 123456789
+E: 2022-06-20 10:06:36.539308 error with date None
+R: 2022-06-20 10:06:36.541225 validating 12/10/1998
+E: 2022-06-20 10:06:36.541225 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 10:06:36.543224 validating True
+R: 2022-06-20 10:06:36.545954 validating False
+R: 2022-06-20 10:06:36.548921 validating 1998/12/10
+E: 2022-06-20 10:06:36.548921 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 10:06:36.552054 validating 06/19/2022
+E: 2022-06-20 10:06:36.552552 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 10:06:36.555069 validating 420.69
+R: 2022-06-20 10:06:36.558068 validating 
+E: 2022-06-20 10:06:36.558068 error with date None
+R: 2022-06-20 10:06:36.559724 validating 999
+R: 2022-06-20 10:06:36.561720 validating 0
+R: 2022-06-20 10:06:36.563723 validating 1
+R: 2022-06-20 10:09:48.262383 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 10:09:54.364174 validating description: some piratey stuff
+R: 2022-06-20 10:09:54.365267 validating 2022-06-20
+E: 2022-06-20 10:09:54.366286 error with date <re.Match object; span=(0, 10), match='2022-06-20'>
+R: 2022-06-20 10:09:54.367321 request made with this data: user_1, , 100.1, 0, 2022-06-20
+R: 2022-06-20 10:09:56.453055 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 10:09:57.114531 all records for user_1 retrieved
+R: 2022-06-20 10:11:13.938935 validating description: user_1
+R: 2022-06-20 10:11:14.001281 validating description: frogs #blessed
+R: 2022-06-20 10:11:14.005490 validating description: hackerMan_@gmail.com
+R: 2022-06-20 10:11:14.011859 validating description: lets dance! ~(^-^)~ 
+R: 2022-06-20 10:11:14.013990 validating description: Not user!
+R: 2022-06-20 10:11:14.022014 validating description: Dude this ain't a name
+R: 2022-06-20 10:11:14.027540 validating description: /index.html
+R: 2022-06-20 10:11:14.032118 validating description: |\/ index.html
+R: 2022-06-20 10:11:14.033761 validating description: ```ayo````
+R: 2022-06-20 10:11:14.036020 validating description: me & you
+R: 2022-06-20 10:11:14.041781 validating description: 
+R: 2022-06-20 10:11:14.044294 validating description: 1
+R: 2022-06-20 10:11:14.046305 validating description: True
+R: 2022-06-20 10:11:14.081955 validating 234454512
+R: 2022-06-20 10:11:14.084251 validating 123456789
+E: 2022-06-20 10:11:14.084251 error with date None
+R: 2022-06-20 10:11:14.086289 validating 12/10/1998
+E: 2022-06-20 10:11:14.086289 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 10:11:14.088288 validating True
+R: 2022-06-20 10:11:14.090287 validating False
+R: 2022-06-20 10:11:14.092287 validating 1998/12/10
+E: 2022-06-20 10:11:14.092287 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 10:11:14.094287 validating 06/19/2022
+E: 2022-06-20 10:11:14.094287 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 10:11:14.096721 validating 420.69
+R: 2022-06-20 10:11:14.098745 validating 
+E: 2022-06-20 10:11:14.098745 error with date None
+R: 2022-06-20 10:11:14.099720 validating 999
+R: 2022-06-20 10:11:14.101741 validating 0
+R: 2022-06-20 10:11:14.103719 validating 1
+R: 2022-06-20 10:12:38.496277 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 10:12:43.944159 validating description: some piratey stuff
+R: 2022-06-20 10:12:43.945112 validating 2022-06-20
+E: 2022-06-20 10:12:43.946659 error with date <re.Match object; span=(0, 10), match='2022-06-20'>
+R: 2022-06-20 10:12:43.947014 request made with this data: user_1, , 100.1, 0, 2022-06-20
+R: 2022-06-20 10:12:46.221079 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 10:12:46.922366 all records for user_1 retrieved
+R: 2022-06-20 10:14:20.641440 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 10:14:25.922883 validating description: some piratey stuff
+E: 2022-06-20 10:14:25.924392 match object is: <re.Match object; span=(0, 18), match='some piratey stuff'>
+R: 2022-06-20 10:14:25.924891 validating 2022-06-20
+E: 2022-06-20 10:14:25.925618 error with date <re.Match object; span=(0, 10), match='2022-06-20'>
+R: 2022-06-20 10:14:25.925886 request made with this data: user_1, some piratey stuff, 100.1, 0, 2022-06-20
+R: 2022-06-20 10:14:26.327390 Created a new reimbursement request with id: 85
+R: 2022-06-20 10:14:26.328604 Database connection closed
+R: 2022-06-20 10:14:27.064145 user with token 2229959116366836704 has manager status False
+R: 2022-06-20 10:14:27.709654 all records for user_1 retrieved
+R: 2022-06-20 10:15:07.495723 validating description: user_1
+E: 2022-06-20 10:15:07.497264 match object is: <re.Match object; span=(0, 4), match='user'>
+R: 2022-06-20 10:15:07.503636 validating description: frogs #blessed
+E: 2022-06-20 10:15:07.506200 match object is: <re.Match object; span=(0, 6), match='frogs '>
+R: 2022-06-20 10:15:07.672062 validating description: hackerMan_@gmail.com
+E: 2022-06-20 10:15:07.672062 match object is: <re.Match object; span=(0, 9), match='hackerMan'>
+R: 2022-06-20 10:15:07.684941 validating description: lets dance! ~(^-^)~ 
+E: 2022-06-20 10:15:07.686269 match object is: <re.Match object; span=(0, 10), match='lets dance'>
+R: 2022-06-20 10:15:07.697957 validating description: Not user!
+E: 2022-06-20 10:15:07.698429 match object is: <re.Match object; span=(0, 8), match='Not user'>
+R: 2022-06-20 10:15:07.711117 validating description: Dude this ain't a name
+E: 2022-06-20 10:15:07.713291 match object is: <re.Match object; span=(0, 22), match="Dude this ain't a name">
+R: 2022-06-20 10:15:07.720088 validating description: /index.html
+E: 2022-06-20 10:15:07.721981 match object is: None
+R: 2022-06-20 10:15:07.727667 validating description: |\/ index.html
+E: 2022-06-20 10:15:07.728902 match object is: None
+R: 2022-06-20 10:15:07.733041 validating description: ```ayo````
+E: 2022-06-20 10:15:07.733481 match object is: None
+R: 2022-06-20 10:15:07.738007 validating description: me & you
+E: 2022-06-20 10:15:07.738664 match object is: <re.Match object; span=(0, 3), match='me '>
+R: 2022-06-20 10:15:07.754221 validating description: 
+E: 2022-06-20 10:15:07.755068 match object is: None
+R: 2022-06-20 10:15:07.761908 validating description: 1
+R: 2022-06-20 10:15:07.768496 validating description: True
+R: 2022-06-20 10:15:07.874431 validating 234454512
+R: 2022-06-20 10:15:07.881629 validating 123456789
+E: 2022-06-20 10:15:07.882633 error with date None
+R: 2022-06-20 10:15:07.886535 validating 12/10/1998
+E: 2022-06-20 10:15:07.887291 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 10:15:07.891423 validating True
+R: 2022-06-20 10:15:07.897052 validating False
+R: 2022-06-20 10:15:07.902570 validating 1998/12/10
+E: 2022-06-20 10:15:07.903120 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 10:15:07.907614 validating 06/19/2022
+E: 2022-06-20 10:15:07.908889 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 10:15:07.913227 validating 420.69
+R: 2022-06-20 10:15:07.916681 validating 
+E: 2022-06-20 10:15:07.917528 error with date None
+R: 2022-06-20 10:15:07.921385 validating 999
+R: 2022-06-20 10:15:07.927906 validating 0
+R: 2022-06-20 10:15:07.934180 validating 1
+R: 2022-06-20 10:16:34.617047 user with token 2219147618530918721 has manager status False
+R: 2022-06-20 10:16:35.281560 all records for user_1 retrieved
+R: 2022-06-20 10:16:36.582452 user with token 2219147618530918721 has manager status False
+R: 2022-06-20 10:16:38.193633 validating description: yo its user 1
+E: 2022-06-20 10:16:38.194738 match object is: <re.Match object; span=(0, 13), match='yo its user 1'>
+R: 2022-06-20 10:16:38.195740 validating 2022-06-22
+E: 2022-06-20 10:16:38.196858 error with date <re.Match object; span=(0, 10), match='2022-06-22'>
+R: 2022-06-20 10:16:38.197359 request made with this data: user_1, yo its user 1, 123.43, 0, 2022-06-22
+R: 2022-06-20 10:16:38.570699 Created a new reimbursement request with id: 86
+R: 2022-06-20 10:16:38.571645 Database connection closed
+R: 2022-06-20 10:16:39.228414 user with token 2219147618530918721 has manager status False
+R: 2022-06-20 10:16:39.929788 all records for user_1 retrieved
+R: 2022-06-20 10:16:47.027442 user with token 1701870828371607886 has manager status True
+R: 2022-06-20 10:16:47.718946 all records for manager_1 retrieved
+R: 2022-06-20 10:16:49.217471 user with token 1701870828371607886 has manager status True
+R: 2022-06-20 10:16:50.462779 validating description: its the manager_1
+E: 2022-06-20 10:16:50.463420 match object is: <re.Match object; span=(0, 15), match='its the manager'>
+R: 2022-06-20 10:16:50.463918 validating 2022-06-22
+E: 2022-06-20 10:16:50.464360 error with date <re.Match object; span=(0, 10), match='2022-06-22'>
+R: 2022-06-20 10:16:50.464828 request made with this data: manager_1, its the manager_1, 420.69, 1, 2022-06-22
+R: 2022-06-20 10:16:50.863515 Created a new reimbursement request with id: 87
+R: 2022-06-20 10:16:50.864514 Database connection closed
+R: 2022-06-20 10:16:51.528296 user with token 1701870828371607886 has manager status True
+R: 2022-06-20 10:16:52.243927 all records for manager_1 retrieved
+R: 2022-06-20 10:17:01.276492 user with token 159000378148421981 has manager status True
+R: 2022-06-20 10:17:01.921087 all records for manager_1 retrieved
+R: 2022-06-20 10:17:03.293245 user with token 159000378148421981 has manager status True
+R: 2022-06-20 10:17:04.403264 validating description: ``
+E: 2022-06-20 10:17:04.404353 match object is: None
+R: 2022-06-20 10:17:04.404353 validating 2022-06-22
+E: 2022-06-20 10:17:04.404353 error with date <re.Match object; span=(0, 10), match='2022-06-22'>
+R: 2022-06-20 10:17:04.405352 request made with this data: manager_1, , 222.22, 1, 2022-06-22
+R: 2022-06-20 10:17:08.616683 user with token 159000378148421981 has manager status True
+R: 2022-06-20 10:17:09.344789 all records for manager_1 retrieved
+R: 2022-06-20 10:17:13.023432 user with token 1158346496634028392 has manager status True
+R: 2022-06-20 10:17:13.686894 all records for manager_1 retrieved
+R: 2022-06-20 10:17:15.074944 user with token 1158346496634028392 has manager status True
+R: 2022-06-20 10:17:19.384435 user with token 1158346496634028392 has manager status True
+R: 2022-06-20 10:17:20.025592 all records for manager_1 retrieved
+R: 2022-06-20 10:17:23.570535 user with token 1892516249023316338 has manager status True
+R: 2022-06-20 10:17:24.271701 all records for manager_1 retrieved
+R: 2022-06-20 10:17:25.670242 user with token 1892516249023316338 has manager status True
+R: 2022-06-20 10:17:26.867252 validating description: make urgency = 0
+E: 2022-06-20 10:17:26.867252 match object is: <re.Match object; span=(0, 13), match='make urgency '>
+R: 2022-06-20 10:17:26.868258 validating 2022-06-22
+E: 2022-06-20 10:17:26.868560 error with date <re.Match object; span=(0, 10), match='2022-06-22'>
+R: 2022-06-20 10:17:26.869041 request made with this data: manager_1, make urgency = 0, 222.22, 0, 2022-06-22
+R: 2022-06-20 10:17:27.263743 Created a new reimbursement request with id: 88
+R: 2022-06-20 10:17:27.263743 Database connection closed
+R: 2022-06-20 10:17:27.984185 user with token 1892516249023316338 has manager status True
+R: 2022-06-20 10:17:28.630725 all records for manager_1 retrieved
+R: 2022-06-20 10:17:35.119479 user with token 391170504690532735 has manager status True
+R: 2022-06-20 10:17:35.764973 all records for manager_1 retrieved
+R: 2022-06-20 10:17:37.043579 user with token 391170504690532735 has manager status True
+R: 2022-06-20 10:17:38.728313 validating description: INVALID DATE
+E: 2022-06-20 10:17:38.729333 match object is: <re.Match object; span=(0, 12), match='INVALID DATE'>
+R: 2022-06-20 10:17:38.729333 validating 2022-06-20
+E: 2022-06-20 10:17:38.730310 error with date <re.Match object; span=(0, 10), match='2022-06-20'>
+R: 2022-06-20 10:17:38.730310 request made with this data: manager_1, INVALID DATE, 222.22, 0, 2022-06-20
+R: 2022-06-20 10:17:39.137772 Created a new reimbursement request with id: 89
+R: 2022-06-20 10:17:39.139401 Database connection closed
+R: 2022-06-20 10:17:39.813934 user with token 391170504690532735 has manager status True
+R: 2022-06-20 10:17:40.620887 all records for manager_1 retrieved
+R: 2022-06-20 10:17:47.262107 user with token 24387719315620235 has manager status False
+R: 2022-06-20 10:17:47.955400 all records for user_1 retrieved
+R: 2022-06-20 10:17:51.546737 user with token 1853009146969883022 has manager status True
+R: 2022-06-20 10:17:52.247805 all records for manager_1 retrieved
+R: 2022-06-20 10:18:54.735304 validating description: user_1
+E: 2022-06-20 10:18:54.736305 match object is: <re.Match object; span=(0, 4), match='user'>
+R: 2022-06-20 10:18:54.740305 validating description: frogs #blessed
+E: 2022-06-20 10:18:54.740305 match object is: <re.Match object; span=(0, 6), match='frogs '>
+R: 2022-06-20 10:18:54.834653 validating description: hackerMan_@gmail.com
+E: 2022-06-20 10:18:54.834653 match object is: <re.Match object; span=(0, 9), match='hackerMan'>
+R: 2022-06-20 10:18:54.839495 validating description: lets dance! ~(^-^)~ 
+E: 2022-06-20 10:18:54.839938 match object is: <re.Match object; span=(0, 10), match='lets dance'>
+R: 2022-06-20 10:18:54.847851 validating description: Not user!
+E: 2022-06-20 10:18:54.848350 match object is: <re.Match object; span=(0, 8), match='Not user'>
+R: 2022-06-20 10:18:54.858561 validating description: Dude this ain't a name
+E: 2022-06-20 10:18:54.858561 match object is: <re.Match object; span=(0, 22), match="Dude this ain't a name">
+R: 2022-06-20 10:18:54.862827 validating description: /index.html
+E: 2022-06-20 10:18:54.862827 match object is: None
+R: 2022-06-20 10:18:54.864815 validating description: |\/ index.html
+E: 2022-06-20 10:18:54.865815 match object is: None
+R: 2022-06-20 10:18:54.867814 validating description: ```ayo````
+E: 2022-06-20 10:18:54.868776 match object is: None
+R: 2022-06-20 10:18:54.871819 validating description: me & you
+E: 2022-06-20 10:18:54.872816 match object is: <re.Match object; span=(0, 3), match='me '>
+R: 2022-06-20 10:18:54.883188 validating description: 
+E: 2022-06-20 10:18:54.884080 match object is: None
+R: 2022-06-20 10:18:54.888000 validating description: 1
+R: 2022-06-20 10:18:54.890001 validating description: True
+R: 2022-06-20 10:18:54.940281 validating 234454512
+R: 2022-06-20 10:18:54.943392 validating 123456789
+E: 2022-06-20 10:18:54.943392 error with date None
+R: 2022-06-20 10:18:54.946389 validating 12/10/1998
+E: 2022-06-20 10:18:54.947387 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 10:18:54.949392 validating True
+R: 2022-06-20 10:18:54.952388 validating False
+R: 2022-06-20 10:18:54.955765 validating 1998/12/10
+E: 2022-06-20 10:18:54.955765 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 10:18:54.958785 validating 06/19/2022
+E: 2022-06-20 10:18:54.958785 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 10:18:54.961766 validating 420.69
+R: 2022-06-20 10:18:54.964765 validating 
+E: 2022-06-20 10:18:54.964765 error with date None
+R: 2022-06-20 10:18:54.967766 validating 999
+R: 2022-06-20 10:18:54.970679 validating 0
+R: 2022-06-20 10:18:54.973202 validating 1
+R: 2022-06-20 10:20:47.995528 validating description: user_1
+E: 2022-06-20 10:20:47.996738 match object is: <re.Match object; span=(0, 4), match='user'>
+R: 2022-06-20 10:20:47.999756 validating description: frogs #blessed
+E: 2022-06-20 10:20:48.000701 match object is: <re.Match object; span=(0, 6), match='frogs '>
+R: 2022-06-20 10:20:48.003092 validating description: hackerMan_@gmail.com
+E: 2022-06-20 10:20:48.003754 match object is: <re.Match object; span=(0, 9), match='hackerMan'>
+R: 2022-06-20 10:20:48.006589 validating description: lets dance! ~(^-^)~ 
+E: 2022-06-20 10:20:48.006589 match object is: <re.Match object; span=(0, 10), match='lets dance'>
+R: 2022-06-20 10:20:48.009589 validating description: Not user!
+E: 2022-06-20 10:20:48.009589 match object is: <re.Match object; span=(0, 8), match='Not user'>
+R: 2022-06-20 10:20:48.011590 validating description: Dude this ain't a name
+E: 2022-06-20 10:20:48.012587 match object is: <re.Match object; span=(0, 22), match="Dude this ain't a name">
+R: 2022-06-20 10:20:48.014372 validating description: /index.html
+E: 2022-06-20 10:20:48.015366 match object is: None
+R: 2022-06-20 10:20:48.018613 validating description: |\/ index.html
+E: 2022-06-20 10:20:48.019083 match object is: None
+R: 2022-06-20 10:20:48.022101 validating description: ```ayo````
+E: 2022-06-20 10:20:48.023101 match object is: None
+R: 2022-06-20 10:20:48.026104 validating description: me & you
+E: 2022-06-20 10:20:48.026104 match object is: <re.Match object; span=(0, 3), match='me '>
+R: 2022-06-20 10:20:48.028799 validating description: 
+E: 2022-06-20 10:20:48.029290 match object is: None
+R: 2022-06-20 10:20:48.031658 validating description: 1
+R: 2022-06-20 10:20:48.033659 validating description: True
+R: 2022-06-20 10:20:48.089410 validating 234454512
+R: 2022-06-20 10:20:48.092534 validating 123456789
+E: 2022-06-20 10:20:48.092534 error with date None
+R: 2022-06-20 10:20:48.095535 validating 12/10/1998
+E: 2022-06-20 10:20:48.095535 error with date <re.Match object; span=(0, 10), match='12/10/1998'>
+R: 2022-06-20 10:20:48.098776 validating True
+R: 2022-06-20 10:20:48.101378 validating False
+R: 2022-06-20 10:20:48.105102 validating 1998/12/10
+E: 2022-06-20 10:20:48.105433 error with date <re.Match object; span=(0, 10), match='1998/12/10'>
+R: 2022-06-20 10:20:48.107517 validating 06/19/2022
+E: 2022-06-20 10:20:48.107517 error with date <re.Match object; span=(0, 10), match='06/19/2022'>
+R: 2022-06-20 10:20:48.111513 validating 420.69
+R: 2022-06-20 10:20:48.114096 validating 
+E: 2022-06-20 10:20:48.114849 error with date None
+R: 2022-06-20 10:20:48.117306 validating 999
+R: 2022-06-20 10:20:48.119306 validating 0
+R: 2022-06-20 10:20:48.122649 validating 1
+R: 2022-06-20 10:21:54.323430 user with token 150039358382047874 has manager status False
+R: 2022-06-20 10:21:54.984730 all records for user_1 retrieved
+R: 2022-06-20 10:21:56.231740 user with token 150039358382047874 has manager status False
+R: 2022-06-20 10:21:57.940228 validating description: yo its user 1
+E: 2022-06-20 10:21:57.941320 match object is: <re.Match object; span=(0, 13), match='yo its user 1'>
+R: 2022-06-20 10:21:57.942219 validating 2022-06-22
+E: 2022-06-20 10:21:57.943361 error with date <re.Match object; span=(0, 10), match='2022-06-22'>
+R: 2022-06-20 10:21:57.943861 request made with this data: user_1, yo its user 1, 123.43, 0, 2022-06-22
+R: 2022-06-20 10:21:58.339386 Created a new reimbursement request with id: 90
+R: 2022-06-20 10:21:58.340401 Database connection closed
+R: 2022-06-20 10:21:59.027230 user with token 150039358382047874 has manager status False
+R: 2022-06-20 10:21:59.660229 all records for user_1 retrieved
+R: 2022-06-20 10:22:06.662327 user with token 2012851199613633165 has manager status True
+R: 2022-06-20 10:22:07.370072 all records for manager_1 retrieved
+R: 2022-06-20 10:22:08.967335 user with token 2012851199613633165 has manager status True
+R: 2022-06-20 10:22:10.316139 validating description: its the manager_1
+E: 2022-06-20 10:22:10.317139 match object is: <re.Match object; span=(0, 15), match='its the manager'>
+R: 2022-06-20 10:22:10.317549 validating 2022-06-22
+E: 2022-06-20 10:22:10.318162 error with date <re.Match object; span=(0, 10), match='2022-06-22'>
+R: 2022-06-20 10:22:10.318662 request made with this data: manager_1, its the manager_1, 420.69, 1, 2022-06-22
+R: 2022-06-20 10:22:10.697253 Created a new reimbursement request with id: 91
+R: 2022-06-20 10:22:10.698382 Database connection closed
+R: 2022-06-20 10:22:11.414667 user with token 2012851199613633165 has manager status True
+R: 2022-06-20 10:22:12.056693 all records for manager_1 retrieved
+R: 2022-06-20 10:22:21.327137 user with token 690697263306015389 has manager status True
+R: 2022-06-20 10:22:21.972785 all records for manager_1 retrieved
+R: 2022-06-20 10:22:23.344559 user with token 690697263306015389 has manager status True
+R: 2022-06-20 10:22:24.549448 validating description: ``
+E: 2022-06-20 10:22:24.549448 match object is: None
+R: 2022-06-20 10:22:24.550412 validating 2022-06-22
+E: 2022-06-20 10:22:24.550412 error with date <re.Match object; span=(0, 10), match='2022-06-22'>
+R: 2022-06-20 10:22:24.550412 request made with this data: manager_1, , 222.22, 1, 2022-06-22
+R: 2022-06-20 10:22:28.821310 user with token 690697263306015389 has manager status True
+R: 2022-06-20 10:22:29.509477 all records for manager_1 retrieved
+R: 2022-06-20 10:22:33.078022 user with token 53925549440008873 has manager status True
+R: 2022-06-20 10:22:33.816555 all records for manager_1 retrieved
+R: 2022-06-20 10:22:35.065074 user with token 53925549440008873 has manager status True
+R: 2022-06-20 10:22:39.714186 user with token 53925549440008873 has manager status True
+R: 2022-06-20 10:22:40.367849 all records for manager_1 retrieved
+R: 2022-06-20 10:22:43.935119 user with token 2203299257928155827 has manager status True
+R: 2022-06-20 10:22:44.691108 all records for manager_1 retrieved
+R: 2022-06-20 10:22:45.985282 user with token 2203299257928155827 has manager status True
+R: 2022-06-20 10:22:48.327536 validating description: make urgency = 0
+E: 2022-06-20 10:22:48.329611 match object is: <re.Match object; span=(0, 13), match='make urgency '>
+R: 2022-06-20 10:22:48.330611 validating 2022-06-22
+E: 2022-06-20 10:22:48.331286 error with date <re.Match object; span=(0, 10), match='2022-06-22'>
+R: 2022-06-20 10:22:48.332668 request made with this data: manager_1, make urgency = 0, 222.22, 0, 2022-06-22
+R: 2022-06-20 10:22:48.721724 Created a new reimbursement request with id: 92
+R: 2022-06-20 10:22:48.722771 Database connection closed
+R: 2022-06-20 10:22:49.507704 user with token 2203299257928155827 has manager status True
+R: 2022-06-20 10:22:50.197345 all records for manager_1 retrieved
+R: 2022-06-20 10:22:57.622572 user with token 1761405534724981441 has manager status True
+R: 2022-06-20 10:22:58.319381 all records for manager_1 retrieved
+R: 2022-06-20 10:22:59.841651 user with token 1761405534724981441 has manager status True
+R: 2022-06-20 10:23:01.393184 validating description: INVALID DATE
+E: 2022-06-20 10:23:01.394184 match object is: <re.Match object; span=(0, 12), match='INVALID DATE'>
+R: 2022-06-20 10:23:01.394689 validating 2022-06-20
+E: 2022-06-20 10:23:01.395058 error with date <re.Match object; span=(0, 10), match='2022-06-20'>
+R: 2022-06-20 10:23:01.395485 request made with this data: manager_1, INVALID DATE, 222.22, 0, 2022-06-20
+R: 2022-06-20 10:23:01.752001 Created a new reimbursement request with id: 93
+R: 2022-06-20 10:23:01.753003 Database connection closed
+R: 2022-06-20 10:23:02.460727 user with token 1761405534724981441 has manager status True
+R: 2022-06-20 10:23:03.092107 all records for manager_1 retrieved
+R: 2022-06-20 10:23:09.685187 user with token 1262667610121601741 has manager status False
+R: 2022-06-20 10:23:10.362822 all records for user_1 retrieved
+R: 2022-06-20 10:23:13.948873 user with token 12246362165904082 has manager status True
+R: 2022-06-20 10:23:14.635806 all records for manager_1 retrieved

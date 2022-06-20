@@ -9,7 +9,7 @@ from service.validateReimbursement import *
     ("lets dance! ~(^-^)~ ", True),
     ("Not user!", True),
     ("Dude this ain't a name", True),
-    ("/index.html", True),
+    ("/index.html", False),
     ("|\/ index.html", False),
     ("```ayo````", False),
     ("me & you", True),
