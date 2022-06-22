@@ -54,6 +54,20 @@ would feel more compelled to reimburse him.
 - Reimbursement requests are represented using multiple numbers
 
 
+## Technologies used:
+- HTML
+- CSS
+- JavaScript
+- Python
+- SQL
+- Selenium
+- Behave
+- Pytest
+- Flask
+- Hashlib
+- Psycopg2
+
+
 # Documentation:
 
 https://docs.google.com/document/d/1sxMhrr--GCi3BmCiTF_WsL_aBWbcUKA9BiRKpcZIT7o/edit?usp=sharing
